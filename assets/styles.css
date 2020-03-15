@@ -4,10 +4,30 @@
 /*--- Code Comment */
 /*?--- Code Query ?*/
 
+/*======================================== General & Global Elements Start */
+
 * {
     margin: 0;
     padding: 0;
 }
+
+button.form_buttons {
+    background-color: #8E1D23 !important; /*-- !important added so that all future Bootstrap or other psuedo (is psuedo correct?) styles are over-ridden */
+    color: #F8F8F8 !important;
+    border: none !important;
+    height: 2em !important;
+    padding: 0 1em !important;
+    border-radius: 5px !important;
+}
+
+button.form_buttons:hover {
+    background-color: #8E1D23aa !important;
+    height: 2.25em !important;
+    padding: 0 1.25em !important;
+}
+
+/*========== General & Global Elements End */
+
 
 /*======================================== Header Start */
 
@@ -151,11 +171,11 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
     right: 0;
 }
 
-.navbar_menu, a {
+.navbar_menu a {
     margin-right: 1vw;
 }
 
-.navbar_menu, a:hover {
+.navbar_menu a:hover {
     border-bottom: 2px solid #F8F8F8;
 }
 
@@ -213,6 +233,12 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
 
 /*======================================== Footer Start */
 
+#footer_trim {
+    height: 1em;
+    width: 100%;
+    background-color: #8E1D23;
+}
+
 .container_footer {
     width: 100%;
     padding-right: 0;
@@ -220,65 +246,68 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
     background-color: #3365A0;
 }
 
-.row {
-    margin: 0;
+#footer_details {
+    margin: 0 auto;
+    width: 80%;
 }
 
-#footer_details div {
+@media (max-width: 992px) {
+#footer_details {
+    width: 90%;
+    }
+}
+
+#footer_details .row, h5  {
+    margin: 0;
     padding: 0;
 }
 
-#logo_footer {
-    height: 10em;
-    padding: 1em 0;
+#stay_informed_footer_div h5 {
+    margin-bottom: 10px;
+}
+
+#footer_details div {
+    padding: 0.25em 0.5em;
     text-align: center;
+    color: #F8F8F8;
+    text-decoration: none;
+    border: none;
+}
+
+@media (min-width: 992px) {
+#footer_details div #contact_us_footer_div {
+    text-align: left;
+    }
+}
+
+#logo_footer {
+    height: 9em;
+    padding: 0;
 } 
 
-/*  #footer_background {
-    height: 15vh;
-    width: 100%;
-    background-color: #3365A0;
-    position: relative;
+@media (max-width: 992px) {
+#logo_footer {
+    height: 6em;
+    }
 }
 
-#footer_trim {
-    height: 2vh;
-    width: 100%;
-    background-color: #8E1D23;
+.social-links ul li a i {
+    width: 30px;
+    height: 30px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
 
-#rpsi_crest_image {
-    height: 12vh;
-    position: absolute;
-    left: 2em;
-    top: 50%;
-    margin-top: -6vh;
-}
-
-#footer_contact_us {
-    text-decoration: none;
-    height: 1em;
-    position: absolute;
-    left: 20em;
-    top: 50%;
-    margin-top: -0.5em;
-}
-
-.footer, a, h5 {
-    color: #F8F8F8;
-}
-
-#footer_contact_us a:hover {
-    color: #F8F8F8;
-    border: none; /*-- This was inserted because a border was displaying due to the navbar rules. I couldn't figure the selector method here to erradicate that 
-}
-
-#footer_stay_informed {
-    height: 5vh;
-    position: absolute;
-    left: 40em;
-    top: 0;
-    margin-top: 0;*/
+.social-links li a i:hover {
+    background: #8E1D23;
 }
 
 /*========== Footer End */
