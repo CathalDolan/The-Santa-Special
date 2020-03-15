@@ -95,6 +95,9 @@ is used to colour
     - Inline links
     - Footer trim line
 
+- **Primary Colour @ 50% Opacity**: Burgundy: rgba(142, 29, 35, 0.5), Hex #8E1D23aa
+    - Headings
+
 - **Secondary Colour**: Blue: rgb(51, 101, 160), Hex #3365A0
     - Footer main colour 
     - Form fields
@@ -424,9 +427,9 @@ sub-office in the Republic of Ireland.
 
 # **3 - Technologies Used**
 ## **3.1 - Bootstrap** 
-v4.3.1 https://getbootstrap.com/docs/4.3/getting-started/introduction/
-Bootstrap is used in this project for the following:
-- navbar
+[v4.4.1](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+Bootstrap is used in this project for the following elements:
+- [Navbar](https://getbootstrap.com/docs/4.4/components/navbar/)
 - etc.
 
 ## **3.2 - Imgur**
@@ -601,6 +604,8 @@ All versions are held on the master branch.
 
 The text for the Home section was sourced courtesy of the Irish Rock n Roll Museum website home page https://irishrocknrollmuseum.com/museum/thin-lizzy/
 
+Academind https://www.youtube.com/watch?v=23bpce-5s8I, Basic Navbar Structure
+
 ## **6.2 - Media**
 
 The discography images used in this site were obtained from:
@@ -608,3 +613,6 @@ The discography images used in this site were obtained from:
 ## **6.3 - Acknowledgements**
 
 Acknowledgements to the following in constructing this project
+
+
+https://deviceatlas.com/blog/most-popular-smartphones#ireland

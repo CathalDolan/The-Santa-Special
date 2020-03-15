@@ -1,0 +1,289 @@
+/*======================================== Section Start */
+/*~~~~~~~~~~~~~~~~~~~~ Sub-Section Start */
+/*========== Section End */
+/*--- Code Comment */
+/*?--- Code Query ?*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*======================================== Header Start */
+
+/*~~~~~~~~~~~~~~~~~~~~ Logo Start */
+
+#santa_special_logo {
+    position: absolute;
+    top: 2em;
+    left: 3em;
+    height: 6em;
+}
+
+@media (max-width: 820px) { /*-- This needs to match the figure in the "Navbar" media query --*/
+#santa_special_logo {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    height: 4em;
+ }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~ Hero Image Start */
+
+.hero_image.home {
+    background-image: url(https://i.imgur.com/zbJghmy.jpg);
+}
+
+.hero_image.journey_tickets {
+    background-image: url(https://i.imgur.com/BlIEgdm.jpg);
+}
+
+.hero_image {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    animation-name: hero_zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.hero_outer {
+    Height: 100vh;
+    width: 100%;
+    overflow: hidden; 
+    position: relative;
+}
+
+@keyframes hero_zoom { /*-- "hero-zoom" is an arbiotrary name I selected. It's required to ID the zoom--*/
+    from {transform: scale(1)}
+    to {transform: scale(1.1)}
+}
+
+@media (max-width: 576px) {
+.hero_image.home {
+    background-image: url(https://i.imgur.com/U4WZL9K.jpg);
+}
+
+.hero_image.journey_tickets {
+    background-image: url(https://i.imgur.com/DSMtI9a.jpg);
+}
+
+.hero_image {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    /* background-image: url(https://i.imgur.com/U4WZL9K.jpg); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+}
+
+#cover_text {
+    background-color: #8E1D23aa;
+
+    width: 600px;
+    padding: 25px 0;
+    border-radius: 5%;
+
+    margin-left: -300px;
+
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+}
+
+@media (max-width: 576px) {
+#cover_text {
+    width: 300px;
+    padding: 15px 0;
+    border-radius: 5%;
+
+    margin-left: -150px;
+    }
+}
+
+#cover-text, h2 {
+    font-size: 3em;
+    letter-spacing: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #F8F8F8;
+    padding: 0 1em;
+}
+ 
+/*~~~~~~~~~~~~~~~~~~~~ Navbar Start */
+
+.nav-bg-colour {
+    background-color: #8E1D23aa;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #F8F8F8;
+}
+
+.navbar-toggler-icon.toggler-colour {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(248, 248, 248)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} /*-- This code came from https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color 
+with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=youtu.be */
+
+.navbar-toggler.toggler-colour{
+    border: solid 1px #F8F8F8;
+    background-color: #8E1D23aa;
+}
+
+.navbar {
+    position: absolute;
+    top: 3em;
+    right: 0;
+}
+
+.navbar_menu, a {
+    margin-right: 1vw;
+}
+
+.navbar_menu, a:hover {
+    border-bottom: 2px solid #F8F8F8;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #F8F8F8;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #F8F8F8;
+    font-weight: bold;
+} /*-- ? Why doesn't ".active a" have the same affect? --*/
+
+@media (max-width: 820px) { /*-- This needs to match the figure in the logo media query --*/
+.navbar {
+    position: absolute;
+    top: 2em;
+    right: 1em;
+    }
+
+    .nav-bg-colour { /*-- ? This is here because I wanted to make the background transparent so that it's not visible, but it's making the icon transparent too. Why? --*/
+        opacity:rgba(142, 29, 35, 0.5);
+    }
+}
+
+/*========== Header End */
+
+
+#circle_container {
+    height: 300px;
+    width: 300px;
+    padding: 10px; 
+    border: 2px solid #8E1D23;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+
+.circle_bg_cover {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.circle_bg_cover, #home_santa_image {
+    background: url(https://i.imgur.com/6pZTdq1.png) no-repeat center center;
+}
+
+.circle_bg_cover, #home_trip_back_image {
+    background: url(https://i.imgur.com/vqC4Ppf.png) no-repeat center center;
+}
+
+.circle_bg_cover, #home_sit_back_image {
+    background: url(https://i.imgur.com/Cm6UOZ8.png) no-repeat center center;
+}
+
+
+/*======================================== Footer Start */
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: #3365A0;
+}
+
+.row {
+    margin: 0;
+}
+
+#footer_details div {
+    padding: 0;
+}
+
+#rpsi_crest_image {
+    height: 10em;
+} 
+
+/*  #footer_background {
+    height: 15vh;
+    width: 100%;
+    background-color: #3365A0;
+    position: relative;
+}
+
+#footer_trim {
+    height: 2vh;
+    width: 100%;
+    background-color: #8E1D23;
+}
+
+#rpsi_crest_image {
+    height: 12vh;
+    position: absolute;
+    left: 2em;
+    top: 50%;
+    margin-top: -6vh;
+}
+
+#footer_contact_us {
+    text-decoration: none;
+    height: 1em;
+    position: absolute;
+    left: 20em;
+    top: 50%;
+    margin-top: -0.5em;
+}
+
+.footer, a, h5 {
+    color: #F8F8F8;
+}
+
+#footer_contact_us a:hover {
+    color: #F8F8F8;
+    border: none; /*-- This was inserted because a border was displaying due to the navbar rules. I couldn't figure the selector method here to erradicate that 
+}
+
+#footer_stay_informed {
+    height: 5vh;
+    position: absolute;
+    left: 40em;
+    top: 0;
+    margin-top: 0;*/
+}
+
+/*========== Footer End */
+
+
+/*======================================== Section Start */
+/*~~~~~~~~~~~~~~~~~~~~ Sub-Section Start */
+/*========== Section End */
+/*--- Code Comment */
+/*?--- Code Query ?*/
