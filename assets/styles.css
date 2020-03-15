@@ -35,7 +35,7 @@
     background-image: url(https://i.imgur.com/zbJghmy.jpg);
 }
 
-.hero_image.journey_tickets {
+.hero_image.schedule_tickets {
     background-image: url(https://i.imgur.com/BlIEgdm.jpg);
 }
 
@@ -213,7 +213,7 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
 
 /*======================================== Footer Start */
 
-.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+.container_footer {
     width: 100%;
     padding-right: 0;
     padding-left: 0;
@@ -228,8 +228,10 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
     padding: 0;
 }
 
-#rpsi_crest_image {
+#logo_footer {
     height: 10em;
+    padding: 1em 0;
+    text-align: center;
 } 
 
 /*  #footer_background {
