@@ -1,0 +1,55 @@
+/*======================================== Section Start */
+/*~~~~~~~~~~~~~~~~~~~~ Sub-Section Start */
+/*========== Section End */
+/*--- Code Comment */
+/*?--- Code Query ?*/
+
+/*======================================== Hero Image Start */
+
+.hero_image.the_crew {
+    background-image: url(https://i.imgur.com/Z91sATp.jpg);
+}
+
+@media (max-width: 576px) { /*-- Smaller image on mobile devices */
+    .hero_image.the_crew {
+    background-image: url(https://i.imgur.com/6ISxQcI.jpg);
+    }
+}
+
+
+/*======================================== Crew Cards Start */
+
+.circle_bg_cover, #santa_elves_image {
+    background: url(https://i.imgur.com/xL6cuKW.png) no-repeat center center;
+}
+
+.circle_bg_cover, #the_engineers_image {
+    background: url(https://i.imgur.com/dDnpWA2.png) no-repeat center center;
+}
+
+.circle_bg_cover, #bar_kitchen_image {
+    background: url(https://i.imgur.com/W0H3CDH.png) no-repeat center center;
+}
+
+.circle_bg_cover, #safety_officers_image {
+    background: url(https://i.imgur.com/TwtUUuF.png) no-repeat center center;
+}
+
+.circle_bg_cover, #the_management_image {
+    background: url(https://i.imgur.com/lrYmtuU.png) no-repeat center center;
+}
+
+.circle_bg_cover, #the_musicians_image {
+    background: url(https://i.imgur.com/ziz3YZq.png) no-repeat center center;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~ Tablet Responsiveness Start */
+
+@media (max-width: 992px) { /*-- Hiding of "sit back" column in main section */
+    #santa_elves_container_div {
+        display: none;
+    }
+    #the_management_container_div {
+        display: none;
+    }
+}

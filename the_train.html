@@ -7,14 +7,15 @@
     <script src="https://kit.fontawesome.com/e4ebc8dc15.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+    <link rel="stylesheet" href="/assets/the_train.css" type="text/css">
     <title>Santa Special</title>
 </head>
 <body>
     <header>
         <section class="hero_outer">
-            <div class="hero_image home"></div>
+            <div class="hero_image the_train"></div>
             <div id="cover_text">
-                <h2>All Aboard</h2>
+                <h2>The Train</h2>
             </div>
         </section>
         <a href="index.html">
@@ -28,25 +29,25 @@
             <div class="collapse navbar-collapse" id="navbar_menu">
                 <ul class="navbar-nav ml-auto"> <!-- Objects should have defaulted to right anyway so unsure why "ml-auto" is needed -->
                     <li class="nav-item">
-                        <a class="nav-link  active" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/schedule_tickets.html">Schedule & Tickets</a>
+                        <a class="nav-link" href="/schedule_&_tickets.html">Schedule & Tickets</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/timeline.html">timeline</a> <!-- Change back to correct one -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/the_crew.html">The Crew</a>
+                        <a class="nav-link" href="#">Crew</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/the_train.html">The Train</a>
+                        <a class="nav-link active" href="/the_train.html">The Train<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/gallery.html">Gallery</a>
+                        <a class="nav-link" href="#">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact_us.html">Contact Us</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -54,29 +55,29 @@
     </header>
     <main>
         <section>
-            <h1>A Most Magical Journey</h1>
-            <p>Get your Christmas jumpers on, the kids packed up and prepare for the most magical 
-            of Christmas experiences. It’s time to board the Santa Special! Join Santa Claus, his 
-            elves and a host of others as you and the kids steam your way into the festive season.</p>
+            <h1>Take a Trip Back in Time</h1>
+            <p>Established in 1961 to preserve the island’s trains, the RPSI is a cross-border 
+            organisation with an office in Dublin and its headquarters in Whitehead , County Antrim. 
+            They have a total of 5 engines and 18 carriages. The Dublin Santa Special uses two of 
+            these engines, the No. 85 and the No. 4</p>
         </section>
         <section>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-4 column_main" id="meet_santa_container_div">
+                    <div class="col-sm-12 col-md-6 col-lg-4 column_main" id="no85_merlin_container_div">
                         <div id="circle_container">
-                            <div class="circle_bg_cover" id="meet_santa_image_home">
+                            <div class="circle_bg_cover" id="no85_image">
                             </div>
                         </div>
-                        <h3 class="section-heading">Meet Santa & His Elves</h3>
+                        <h3 class="section-heading">No. 85 - Merlin</h3>
                         <hr>
-                        <p>It wouldn’t be Christmas without the big man in red and his helpful 
-                            elves. You’ll meet them all  of them onboard, where there’ll be gifts 
-                            and “Ho! Ho! Ho!’s” a plenty.</p>
-                        <button class="form_buttons">More</button>
+                        <p>Looking a lot like Thomas the Tank Engine, the No. 85 was the original 
+                        “Enterprise”. Introduced in 1941, and operated by the GNR (Great Northern 
+                        Railway), it was a non-stop service between Dublin and Belfast.</p>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 column_main" id="trip_back_container_div">
+                    <div class="col-sm-12 col-md-6 col-lg-4 column_main" id="no4_the_beastcontainer_div">
                         <div id="circle_container">
-                            <div class="circle_bg_cover" id="trip_back_image_home">
+                            <div class="circle_bg_cover" id="no4_the_beast_image">
                             </div>
                         </div>
                         <h3 class="section-heading">Take a Trip Back in Time</h3>
@@ -84,44 +85,29 @@
                         <p>Step onboard the Santa Special and journey back to a different era. 
                                 Our engines and carriages have all past their 70th birthdays, and some 
                                 are nearly a century old!</p>
-                        <button class="form_buttons">More</button>
                     </div>
-                    <div class="col-sm-12 col-lg-4 column_main" id="sit_back_container_div">
+                    <div class="col-sm-12 col-lg-4 column_main" id="craven_carriages_container_div">
                         <div id="circle_container">
-                            <div class="circle_bg_cover" id="sit_back_image_home">
+                            <div class="circle_bg_cover" id="craven_carriages_image">
                             </div>
                         </div>
-                        <h3 class="section-heading">Sit Back & Enjoy</h3>
+                        <h3 class="section-heading">Craven Carriages</h3>
                         <hr>
-                        <p>Once settled into your vintage carriage, sit back and enjoy the trip. 
-                            Sing along with our musicians, savour a drink from the bar, or just take 
-                            in the beautiful city and countryside.</p>
-                        <button class="form_buttons">More</button>
+                        <p id="craven_carriages_p1_the_train">Most of our carriages originally came into service in the late 50's and early 
+                        60's. They were built by the famous Craven Brothers in Manchester, and ran up 
+                        the mid-1990's before being retired by Irish Rail and NIR, and then taken over 
+                        by the RPSI.</p>
+                        </br>
+                        <p id="craven_carriages_p2_the_train">They’re quite different to their modern counterparts; the doorway between 
+                        carriages needs a stooped head and good balance, there is a sliding window at each 
+                        seat, and to open the doors you must first open the window, reach out, and  then 
+                        turn the handle from the outside. </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container-fluid" id="reviews_home">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-6 reviews_column" id="review_1">
-                        <div class="ticket_background_div">
-                            <img src="https://i.imgur.com/MRyXFeh.png" alt="Vintage Style Train Ticket" class="ticket_background">
-                        </div>
-                        <div class="ticket_background_overlay">
-                            <h5><q>A magical journey</q></h5>
-                            <p>- Irish Independent <cite="https://www.independent.ie/life/christmas/all-aboard-a-magical-journey-on-the-santa-special-steam-train-36421492.html"</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-6 reviews_column" id="review_2">
-                        <div class="ticket_background_div">
-                            <img src="https://i.imgur.com/MRyXFeh.png" alt="Vintage Style Train Ticket" class="ticket_background">
-                        </div>
-                        <div class="ticket_background_overlay">
-                            <h5><q>A one of a <br/>kind experience</q></h5>
-                            <p>- Familyfun.ie <cite="https://www.familyfun.ie/steam-train-excursions/"</p>
-                        </div>
-                    </div>
-                </div>
+        <section class="container-fluid" id="">
+                
         </section>
     </main>
     <footer>

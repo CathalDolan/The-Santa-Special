@@ -1,0 +1,19 @@
+/*======================================== Section Start */
+/*~~~~~~~~~~~~~~~~~~~~ Sub-Section Start */
+/*========== Section End */
+/*--- Code Comment */
+/*?--- Code Query ?*/
+
+.hero_image.schedule_tickets {
+    background-image: url(https://i.imgur.com/BlIEgdm.jpg);
+}
+
+@media (max-width: 576px) {
+    .hero_image.schedule_tickets {
+    background-image: url(https://i.imgur.com/DSMtI9a.jpg);
+    }
+}
+
+main section a {
+    color: #5B5B5B !important; /*!important is required here, because it was used on the Global_Index css page. Relook at! */
+}

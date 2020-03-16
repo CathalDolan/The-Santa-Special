@@ -51,7 +51,7 @@ at [eventbrite](ghjk), a link to which is included on the "Schedule & Tickets" p
 
 
 ## **1.2 What is the Purpose of the Site?**
-The purpose of the site is two fold:
+The theoretical purpose of the site is two-fold:
 1. **New Guests**: The site acts as a shop window for the "Santa Special", providing
 information highlighting the positives of the service. The expected outcome is to
 engage those who have an interest in family days out with young kids, and preferably
@@ -65,6 +65,11 @@ difficult to find out information as there are limited online resources for it. 
 addition to providing core information such as departure times and locations, it also
 contains more general points of interest about the service that will be of interest
 to existing customers.
+
+###Actual Purpose
+The actual purpose of the site is to demonstrate my abilities as a developer. While
+aesthetics are important, the ultimate goal is to write high quality html and css 
+and demonstrate in such a way that shows my skill level as as a developer.
 
 ## **1.3 Who Built the Site and Why?**
 The site was conceived, designed and built by Cathal Dolan as his first "User Centric 

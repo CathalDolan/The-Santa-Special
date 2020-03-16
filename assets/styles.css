@@ -40,7 +40,8 @@ hr {
 }
 
 a {
-    color: #F8F8F8 !important; /* Used here because I can't it to work further down. 
+    color: #F8F8F8 !important; /* Used here because I can't get it to work further down. In addition, I've
+    had to reapply it on the Schedule_Tickets page for the EventBrite link! 
     And just to confuse myself futher: it doesn't work for i elements! */
 }
 
@@ -103,10 +104,6 @@ a {
     background-image: url(https://i.imgur.com/zbJghmy.jpg);
 }
 
-.hero_image.schedule_tickets {
-    background-image: url(https://i.imgur.com/BlIEgdm.jpg);
-}
-
 .hero_image {
     padding: 0;
     margin: 0;
@@ -139,10 +136,6 @@ a {
 @media (max-width: 576px) {
 .hero_image.home {
     background-image: url(https://i.imgur.com/U4WZL9K.jpg);
-}
-
-.hero_image.journey_tickets {
-    background-image: url(https://i.imgur.com/DSMtI9a.jpg);
 }
 
 .hero_image {
@@ -273,6 +266,8 @@ main {
 .circle_bg_cover {
     height: 100%;
     border-radius: 50%;
+    max-width: 1000px; /*-- this and max-height inserted in an attempt to stop the image cropping */
+    max-height: 1000px;
 }
 
 .circle_bg_cover, #meet_santa_image_home {
@@ -283,7 +278,7 @@ main {
     background: url(https://i.imgur.com/vqC4Ppf.png) no-repeat center center;
 }
 
-.circle_bg_cover, sit_back_image_home {
+.circle_bg_cover, #sit_back_image_home {
     background: url(https://i.imgur.com/Cm6UOZ8.png) no-repeat center center;
 }
 
@@ -291,15 +286,14 @@ main {
     margin: 1em 0 2em 0;
 }
 
-.reviews_column {
-    text-align: center;
-    margin-bottom: 1em;
-}
-
 @media (max-width: 992px) { /*-- Hiding of "sit back" column in main section */
 #sit_back_container_div {
     display: none;
     }
+}
+
+.reviews_column {
+    text-align: center;
 }
 
 .ticket_background_div {
@@ -342,6 +336,7 @@ main {
 /*======================================== Footer Start */
 
 #footer_trim {
+    margin-top: 1em;
     height: 1em;
     width: 100%;
     background-color: #8E1D23;

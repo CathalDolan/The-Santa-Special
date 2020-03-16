@@ -7,14 +7,15 @@
     <script src="https://kit.fontawesome.com/e4ebc8dc15.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+    <link rel="stylesheet" href="/assets/the_crew.css" type="text/css">
     <title>Santa Special</title>
 </head>
 <body>
     <header>
         <section class="hero_outer">
-            <div class="hero_image schedule_tickets"></div>
+            <div class="hero_image the_crew"></div>
             <div id="cover_text">
-                <h2>Schedule & Tickets</h2>
+                <h2>The Crew</h2>
             </div>
         </section>
         <a href="index.html">
@@ -31,47 +32,110 @@
                         <a class="nav-link" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/schedule_&_tickets.html">Schedule & Tickets<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/schedule_tickets.html">Schedule & Tickets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Your Journey</a>
+                        <a class="nav-link" href="/timeline.html">timeline</a> <!-- Change back to correct one -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Crew</a>
+                        <a class="nav-link active" href="/the_crew.html">The Crew <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">The Train</a>
+                        <a class="nav-link" href="/the_train.html">The Train</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link" href="/gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="/contact_us.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-
     <main>
-        <section id="introduction_home">
-            <h1>When & How</h1>
-            <p>The Santa Special operates on the three weekends running up 
-            Christmas. It departs up to three times a day from Connolly Station 
-            on Amiens Street in Dublin, travelling to Maynooth on a return 
-            journey. Trip times are around two and a half hours, but they can 
-            vary depending on how the engine’s mood :-)</p>
-
-            <p>Tickets go on sale 1st of June and can be purchased on <span>
-            <a href="https://www.eventbrite.ie/o/railway-preservation-society-of-ireland-10929797747" target="_blank">
-            Eventbrite</a></span>, 
-            costing €18.00 each. Ticket price includes a selection box gift for 
-            kids and a tea/coffee with a mince pie for big kids (or yes can have 
-            a selection box instead).  Sign up to our mailing list below for RPSI 
-            updates and advance notification of ticket on sale dates.</p>
+        <section>
+            <h1>Santa's Little Helpers</h1>
+            <p>Just like his factories in the North Pole, Santa needs a whole team of volunteers to run 
+            his special train. In fact he needs nearly fifty of them on every journey! Everyone from 
+            sandwich makers, to fitters and engineers are involved in making sure your journey on the 
+            Santa Special is just that, special!</p>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4 column_main" id="santa_elves_container_div">
+                        <div id="circle_container">
+                            <div class="circle_bg_cover" id="santa_elves_image">
+                            </div>
+                        </div>
+                        <h3 class="section-heading">Santa & His Elves</h3>
+                        <hr>
+                        <p>Our most important crew members are of course Santa and his elves. Technically 
+                        they run the entire operation, but because their time is taken up making sure all 
+                        of the children onboard are happy, they let others handle the messy work.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 column_main" id="the_engineers_container_div">
+                        <div id="circle_container">
+                            <div class="circle_bg_cover" id="the_engineers_image">
+                            </div>
+                        </div>
+                        <h3 class="section-heading">The Engineers</h3>
+                        <hr>
+                        <p>These are the folks that shovel the coal to keep the fires burning, who open 
+                        the valves to keep the steam pumping, grease the cogs to keep the wheels turning, 
+                        and drive the train to keep us all smiling! Their soot covered faces make them 
+                        easy to spot.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 column_main" id="bar_kitchen_container_div">
+                        <div id="circle_container">
+                            <div class="circle_bg_cover" id="bar_kitchen_image">
+                            </div>
+                        </div>
+                        <h3 class="section-heading">The Bar & Kitchen</h3>
+                        <hr>
+                        <p>When it comes to refreshments, we have you covered. Apart from teas, coffees, 
+                        minerals and a full bar, we also serve the best mince pies in the country, while 
+                        our sandwiches fillings are the stuff of legend! </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 column_main" id="safety_officers_container_div">
+                        <div id="circle_container">
+                            <div class="circle_bg_cover" id="safety_officers_image">
+                            </div>
+                        </div>
+                        <h3 class="section-heading">The Safety Officers</h3>
+                        <hr>
+                        <p>Dressed in their blazers, RPSI ties and pins, our safety officers play a vital 
+                        role in ensuring your trip is a safe one. Vintage trains have hazards that you don’t 
+                        get on modern trains, so listen to their instructions carefully! </p>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 column_main" id="the_management_container_div">
+                        <div id="circle_container">
+                            <div class="circle_bg_cover" id="the_management_image">
+                            </div>
+                        </div>
+                        <h3 class="section-heading">The Management</h3>
+                        <hr>
+                        <p>When the big boss, the man in red, is off on his rounds, he hands the reins over 
+                        to the Train Manager. Their job is to make sure that everything runs without a hitch.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 column_main" id="the_musicians_container_div">
+                        <div id="circle_container">
+                            <div class="circle_bg_cover" id="the_musicians_image">
+                            </div>
+                        </div>
+                        <h3 class="section-heading">The Musicians</h3>
+                        <hr>
+                        <p>Expect to see the musicians before you hear them as they wander from carriage to 
+                        carriage, singing, dancing, joking, and generally getting our guests in the mood for 
+                        the main man. Impromptu platform or bar-side sing-alongs are to be expected.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-
     <footer>
         <div id="footer_trim">
         </div>
