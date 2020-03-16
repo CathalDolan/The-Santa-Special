@@ -619,3 +619,12 @@ Acknowledgements to the following in constructing this project
 
 
 https://deviceatlas.com/blog/most-popular-smartphones#ireland
+
+
+/*======================================== Section Start */
+/*~~~~~~~~~~~~~~~~~~~~ Sub-Section Start */
+/*========== Section End */
+/*--- Code Comment */
+/*?--- Code Query ?*/
+
+Timeline info - Tristan White https://youtu.be/3qNgNs_ziJk https://codepen.io/triss90/pen/RraEmM

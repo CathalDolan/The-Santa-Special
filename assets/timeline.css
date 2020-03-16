@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
 
-#my_header_test {
-    color: pink;
-}
-
 .ps-timeline-sec {
   position: relative;
   background: #fff;
@@ -12,10 +8,10 @@
   position: relative;
 }
 
-/* The time line "ends" */
+/* The time line "bookends" start */
 
 .ps-timeline-sec .container ol:before {
-  background: #348e80;
+  background: #8E1D23;
   content: "";
   width: 2px;
   height: 15px;
@@ -23,7 +19,7 @@
   top: -350%; /* In dev tools I can see that container is 2px, but unsure why I need 350% to centre it */
 }
 .ps-timeline-sec .container ol:after {
-  background: #348e80;
+  background: #8E1D23;
   content: "";
   width: 2px;
   height: 15px;
@@ -31,33 +27,26 @@
   top: -350%
 }
 
-/* The time line "ends" */
+/* The time line "bookends" end */
 
 .ps-timeline-sec .container ol.ps-timeline { /*This is the actual "line". I'm unsure about the selector string */
   margin: 390px 0; /* This is what pushed the entire thing down the page. */
   padding: 0px;
-  border-top: 2px solid #348e80;
+  border-top: 2px solid #8E1D23;
   list-style: none;
 }
 .ps-timeline-sec .container ol.ps-timeline li {
   float: left;
-  width: 25%; /* width of each element on the timeline */
+  width: 16.65%; /* width of each element on the timeline */
   padding-top: 30px; /* can't figure this bit out */
   position: relative;
 }
-.ps-timeline-sec .container ol.ps-timeline li span {
-  width: 50px;
-  height: 50px;
-  margin-left: -25px;
-  background: #fff;
-  border: 4px solid #348e80;
+.ps-timeline-sec .container ol.ps-timeline li span { /*these are the markers along the timeline */
+  width: 16px;
+  height: 16px;
+  margin: 17px -8px 0 0; /*-- Positions the markers on the timeline */
+  background: #8E1D23;
   border-radius: 50%;
-  box-shadow: 0 0 0 0px #fff;
-  text-align: center;
-  line-height: 50px -10;
-  color: #df8625;
-  font-size: 2em;
-  font-style: normal;
   position: absolute;
   top: -26px;
   left: 50%;
@@ -75,7 +64,7 @@
 }
 .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
   position: absolute;
-  margin-top: 60px;
+  margin-top: 40px;
   width: 100%;
 }
 .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot img {
@@ -84,19 +73,55 @@
 }
 .ps-timeline-sec .container ol.ps-timeline li p {
   text-align: center;
-  width: 80%;
-  margin: 0 auto;
-}
-.ps-timeline-sec .container ol.ps-timeline li .ps-top {
+  font-weight: bold;
+  color: #8E1D23;
+
   position: absolute;
-  bottom: 0;
-  margin-bottom: 100px;
-}
-.ps-timeline-sec .container ol.ps-timeline li .ps-bot {
-  position: absolute;
-  margin-top: 35px;
+  bottom: -55px;
+  width: 200px; /* Width needed to match #circle_container as this element is positioned relative to it */
 }
 
+.ps-timeline-sec .container ol.ps-timeline li .timeline_beneath_code {
+    top: -45px;
+}
+
+#circle_container {
+    height: 200px;
+    width: 200px;
+    padding: 8px; 
+    border: 1px solid #8E1D23;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.circle_bg_cover {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.circle_bg_cover, #connolly_station {
+    background: url(https://i.imgur.com/l6ZmhDx.png) no-repeat center center;
+}
+
+.circle_bg_cover, #croke_park {
+    background: url(https://i.imgur.com/6L9duca.png) no-repeat center center;
+}
+
+.circle_bg_cover, #m50_m3_junction {
+    background: url(https://i.imgur.com/WlJ7rYS.png) no-repeat center center;
+}
+
+.circle_bg_cover, #royal_canal {
+    background: url(https://i.imgur.com/PEEfZUX.png) no-repeat center center;
+}
+
+.circle_bg_cover, #carton_house {
+    background: url(https://i.imgur.com/Oqh4ewM.png) no-repeat center center;
+}
+
+.circle_bg_cover, #maynooth {
+    background: url(https://i.imgur.com/L2oFRw3.png) no-repeat center center;
+}
 
 /* Mobile Version */
 

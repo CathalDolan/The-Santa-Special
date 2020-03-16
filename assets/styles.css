@@ -6,9 +6,8 @@
 
 /*======================================== General & Global Elements Start */
 
-<style>
+
 @import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700&display=swap');
-</style>
 
 * {
     margin: 0;
@@ -194,7 +193,6 @@ a {
 }
  
 /*~~~~~~~~~~~~~~~~~~~~ Navbar Start */
-
 .nav-bg-colour {
     background-color: #8E1D23aa;
 }
@@ -419,7 +417,7 @@ main {
 
 
 /*======================================== Section Start */
-/*~~~~~~~~~~~~~~~~~~~~ Sub-Section Start */
+/* Sub-Section Start */
 /*========== Section End */
 /*--- Code Comment */
 /*?--- Code Query ?*/
