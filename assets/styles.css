@@ -298,6 +298,12 @@ main {
     margin-bottom: 1em;
 }
 
+@media (max-width: 992px) { /*-- Hiding of "sit back" column in main section */
+#sit_back_container_div {
+    display: none;
+    }
+}
+
 .ticket_background_div {
     height: 12em;
     position: relative;
@@ -309,11 +315,27 @@ main {
 
 .ticket_background_overlay {
     position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 35%;
-    bottom: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+#review_2 {
+    display: none;
+    }
+
+#review_1 { /*--? This, in combinbation with the two that follow, isn't changing the order. What am I doing wrong> */
+    order: 1;
+}
+
+#meet_santa_container_div {
+    order: 2;
+  }
+  
+#trip_back_container_div {
+    order: 3;
+  }
 }
 
 /*========== Header End */
