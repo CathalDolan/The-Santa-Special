@@ -6,24 +6,73 @@
 
 /*======================================== General & Global Elements Start */
 
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700&display=swap');
+</style>
+
 * {
     margin: 0;
     padding: 0;
 }
 
-button.form_buttons {
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #8E1D23;
+    font-family:'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    padding: 0.25em 0;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border-top: 2px solid #8E1D23;
+}
+
+a {
+    color: #F8F8F8 !important; /* Used here because I can't it to work further down. 
+    And just to confuse myself futher: it doesn't work for i elements! */
+}
+
+.column_main {
+    padding: 0 2em;
+    text-align: center;
+}
+
+.form_buttons {
     background-color: #8E1D23 !important; /*-- !important added so that all future Bootstrap or other psuedo (is psuedo correct?) styles are over-ridden */
     color: #F8F8F8 !important;
     border: none !important;
     height: 2em !important;
     padding: 0 1em !important;
     border-radius: 5px !important;
+    margin: 1em 0;
 }
 
-button.form_buttons:hover {
+.form_buttons:hover {
     background-color: #8E1D23aa !important;
     height: 2.25em !important;
     padding: 0 1.25em !important;
+}
+
+#circle_container {
+    height: 250px;
+    width: 250px;
+    padding: 10px; 
+    border: 2px solid #8E1D23;
+    border-radius: 50%;
+    margin: 2em auto;
 }
 
 /*========== General & Global Elements End */
@@ -139,7 +188,6 @@ button.form_buttons:hover {
 #cover-text, h2 {
     font-size: 3em;
     letter-spacing: 4px;
-    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: #F8F8F8;
     padding: 0 1em;
@@ -204,13 +252,24 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
 /*========== Header End */
 
 
-#circle_container {
-    height: 300px;
-    width: 300px;
-    padding: 10px; 
-    border: 2px solid #8E1D23;
-    border-radius: 50%;
-    margin: 0px auto;
+/*======================================== Home Page Start */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+main {
+    width: 90%;
+    margin: 0 auto;
+    }
+}
+
+#introduction_home span {
+    text-decoration: none;
+    font-weight: bold;
+    color: #5B5B5B;
 }
 
 .circle_bg_cover {
@@ -218,17 +277,46 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
     border-radius: 50%;
 }
 
-.circle_bg_cover, #home_santa_image {
+.circle_bg_cover, #meet_santa_image_home {
     background: url(https://i.imgur.com/6pZTdq1.png) no-repeat center center;
 }
 
-.circle_bg_cover, #home_trip_back_image {
+.circle_bg_cover, #trip_back_image_home {
     background: url(https://i.imgur.com/vqC4Ppf.png) no-repeat center center;
 }
 
-.circle_bg_cover, #home_sit_back_image {
+.circle_bg_cover, sit_back_image_home {
     background: url(https://i.imgur.com/Cm6UOZ8.png) no-repeat center center;
 }
+
+.column_main > .form_buttons {
+    margin: 1em 0 2em 0;
+}
+
+.reviews_column {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.ticket_background_div {
+    height: 12em;
+    position: relative;
+}
+
+.ticket_background {
+    height: 12em;
+}
+
+.ticket_background_overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 35%;
+    bottom: 50%;
+}
+
+/*========== Header End */
 
 
 /*======================================== Footer Start */
@@ -248,17 +336,11 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
 
 #footer_details {
     margin: 0 auto;
-    width: 80%;
-}
-
-@media (max-width: 992px) {
-#footer_details {
     width: 90%;
-    }
 }
 
 #footer_details .row, h5  {
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
 }
 
@@ -291,13 +373,13 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
     }
 }
 
-.social-links ul li a i {
-    width: 30px;
-    height: 30px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
+#stay-informed_yes_button_footer {
+    margin: 0;
+}
+
+.social-links li a i {
+    margin: 0 0.25em;
+    font-size: 2em;
     text-align: center;
     color: #fafafa;
     transition: all 0.2s ease-in-out;
@@ -307,7 +389,8 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
 }
 
 .social-links li a i:hover {
-    background: #8E1D23;
+    color: #8E1D23aa;
+    font-size: 2.05em;
 }
 
 /*========== Footer End */

@@ -120,13 +120,16 @@ is used to colour
 
 ### **2.1.2 - Fonts**
 The site uses two fonts, both members of the Google Fonts family. For flexibility 
-purposes all weights are available for use. 
-- **Font 1**:
+purposes all weights are available for use. The fonts chosen are based on the
+fonts that were used by British Rail for over half a century and were chosen for 
+their familiarity and association with trains.
+
+- **Font 1**: Lato (in place of Gill Sans)
     - Hero images
     - All headings
     - Primary text on "Ticket" Backgrounds
 
-- **Font 2**:
+- **Font 2**: Raleway (in place of Railway Alphabet)
     - All paragraphs
     - Buttons
     - Form placeholders
