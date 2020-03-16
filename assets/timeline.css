@@ -81,7 +81,7 @@
   width: 200px; /* Width needed to match #circle_container as this element is positioned relative to it */
 }
 
-.ps-timeline-sec .container ol.ps-timeline li .timeline_beneath_code {
+.ps-timeline-sec .container ol.ps-timeline li .timeline_beneath_code { /*-- Required to push the text up from the image container beneath --*/
     top: -45px;
 }
 
@@ -125,40 +125,49 @@
 
 /* Mobile Version */
 
+/*-- Timeline Line & Bookends Start --*/
+
 @media screen and (max-width: 767px) {
+    #circle_container  { /*-- Temp to hide the pictures while working on laying out text --*/
+        display: none;
+    }
+
   .ps-timeline-sec .container ol:before {
-    background: #348e80;
+    background: #8E1D23;
     content: "";
     width: 10px;
-    height: 10px;
-    border-radius: 100%;
+    height: 2px;
     position: absolute;
-    top: 130px !important;
+    top: 0px !important;
     left: 36px !important;
   }
   .ps-timeline-sec .container ol:after {
-    background: #348e80;
+    background: #8E1D23;
     content: "";
     width: 10px;
-    height: 10px;
-    border-radius: 100%;
+    height: 2px;
     position: absolute;
-    top: inherit !important;
+    top: inherit !important; /*--? Inherited from what? */
     left: 36px;
   }
-  .ps-timeline-sec .container ol.ps-timeline {
+
+  .ps-timeline-sec .container ol.ps-timeline { /*--This is the actual timeline line --*/
     margin: 130px 0 !important;
-    border-left: 2px solid #348e80;
+    border-left: 2px solid #8E1D23;
     padding-left: 0 !important;
     padding-top: 120px !important;
     border-top: 0 !important;
     margin-left: 25px !important;
   }
-  .ps-timeline-sec .container ol.ps-timeline li {
+
+  .ps-timeline-sec .container ol.ps-timeline li { /*-- This is each individual section of the timeline line apart from top and bottom --*/
     height: 220px;
     float: none !important;
     width: inherit !important;
   }
+
+/*-- Timeline Line & Bookends End --*/
+
   .ps-timeline-sec .container ol.ps-timeline li:nth-child(2) .img-handler-bot img {
     width: 70px;
   }
@@ -176,30 +185,14 @@
   .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot img {
     width: 100%;
   }
-  .ps-timeline-sec .container ol.ps-timeline li:last-child .ps-top {
-    margin-bottom: 0 !important;
-    top: 20px;
-    width: 50% !important;
+  .ps-timeline-sec .container ol.ps-timeline li span { /*-- These are the markers along the timeline --*/
+    left: -9px !important;
   }
-  .ps-timeline-sec .container ol.ps-timeline li span {
-    left: 0 !important;
-  }
-  .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
-    content: none !important;
-  }
-  .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after {
-    content: none !important;
-  }
-  .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before {
-    content: none !important;
-  }
-  .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:after {
-    content: none !important;
-  }
+  
   .ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
     position: absolute !important;
-    bottom: 150px !important;
-    width: 30% !important;
+    top: 0px !important;
+    width: 60% !important;
     float: left !important;
     margin-left: 35px !important;
     margin-bottom: 0 !important;
@@ -211,7 +204,7 @@
   .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
     position: absolute !important;
     bottom: 115px !important;
-    width: 30% !important;
+    width: 60% !important;
     float: left !important;
     margin-left: 35px !important;
     margin-bottom: 0 !important;
@@ -221,19 +214,32 @@
     width: 100% !important;
     margin: 0 auto !important;
     margin-top: 0px !important;
+    margin-bottom: 0px !important;
   }
-  .ps-timeline-sec .container ol.ps-timeline li .ps-top {
-    width: 60% !important;
-    float: right !important;
-    right: 0;
-    top: -40px;
-  }
-  .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
-    width: 60% !important;
-    float: right !important;
-    right: 0;
-    top: -40px;
-  }
+    .ps-timeline-sec .container ol.ps-timeline li .timeline_text {
+   
+        color: blue !important;
+        top: 0;
+        transform: rotate(-30deg);
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li #croke_park_p {
+        position: absolute;
+        top: -82px;
+        left: 55px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li #m50_m3_junction_p {
+        position: absolute;
+        top: -82px;
+        left: 55px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li #royal_canal_p {
+        position: absolute;
+        top: -82px;
+        left: 55px;
+    }
 }
 
 /* Mobile End */
