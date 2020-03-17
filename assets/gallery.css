@@ -10,6 +10,101 @@
 
 @media (max-width: 576px) {
     .hero_image.gallery {
-    background-image: url(https://i.imgur.com/evZkf9N.jpg;
+    background-image: url(https://i.imgur.com/evZkf9N.jpg);
+    }
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~ Gallery Images Start */
+
+.ticket_background_div {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.gallery_image {
+    height: 144px;
+    width: 216px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.gallery_image iframe {
+    height: 144px;
+    width: 216px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~ Gallery Images Size Adjust Start */
+/*-- This adjusts the image widths so we can get 2 or 3 colums where we couldn't othewise. 
+All three media queries have the same measurements. How can all be cobined to DRY code?*/
+
+@media (max-width: 370px) { 
+    .ticket_background_div {
+        height: 149px;
+        width: 244px;
+    }
+
+    .ticket_background {
+        height: 149px;
+        width: 244px;
+    }
+    
+    .gallery_image, .gallery_image iframe {
+        height: 112px;
+        width: 167px;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 750px) { 
+    .ticket_background_div {
+        height: 149px;
+        width: 244px;
+    }
+
+    .ticket_background {
+        height: 149px;
+        width: 244px;
+    }
+    
+    .gallery_image, .gallery_image iframe {
+        height: 112px;
+        width: 167px;
+    }
+}
+
+@media (min-width: 875px) and (max-width: 1250px) {
+    .ticket_background_div {
+        height: 149px;
+        width: 244px;
+    }
+
+    .ticket_background {
+        height: 149px;
+        width: 244px;
+    }
+    
+    .gallery_image, .gallery_image iframe {
+        height: 112px;
+        width: 167px;
+    }
+}
+
+/*-- Hiding of column 3 on smaller tablets and landscape mobiles. Two media queries are required to take 
+into account the two different image sizes. */
+
+@media (min-width: 609px) and (max-width: 913px) {
+    #gallery_column_3 {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1027px) {
+    #gallery_column_3 {
+        display: none;
     }
 }

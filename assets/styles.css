@@ -77,6 +77,25 @@ a {
     margin: 2em auto;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~ "Ticket" Background Start */
+
+/*-- The vintage style ticket background is found on the Home, Schedule & Tickets and 
+Gallery pages. However, the sizes below do will apply to the Schedule & Tickets page as they are too large. */ 
+
+.ticket_background_div {
+    height: 185px;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ticket_background {
+    height: 185px;
+    width: 300px;
+    z-index: 2;
+}
+
 
 /*========== General & Global Elements End */
 
@@ -299,20 +318,12 @@ main {
     text-align: center;
 }
 
-.ticket_background_div {
-    height: 12em;
-    position: relative;
-}
-
-.ticket_background {
-    height: 12em;
-}
-
 .ticket_background_overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
 }
 
 @media (max-width: 768px) {
