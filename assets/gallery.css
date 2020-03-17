@@ -1,0 +1,15 @@
+/*======================================== Section Start */
+/*~~~~~~~~~~~~~~~~~~~~ Sub-Section Start */
+/*========== Section End */
+/*--- Code Comment */
+/*?--- Code Query ?*/
+
+.hero_image.gallery {
+    background-image: url(https://i.imgur.com/widMRtU.jpg);
+}
+
+@media (max-width: 576px) {
+    .hero_image.gallery {
+    background-image: url(https://i.imgur.com/evZkf9N.jpg;
+    }
+}

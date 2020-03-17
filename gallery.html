@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/e4ebc8dc15.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+    <link rel="stylesheet" href="/assets/gallery.css" type="text/css">
+    <title>Santa Special</title>
+</head>
+<body>
+    <header>
+        <section class="hero_outer">
+            <div class="hero_image gallery"></div>
+            <div id="cover_text">
+                <h2>Gallery</h2>
+            </div>
+        </section>
+        <a href="index.html">
+            <img src="https://i.imgur.com/ICXCZqT.png" alt="Santa Special Logo" id="santa_special_logo">
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light nav-bg-colour">
+            <button class="navbar-toggler ml-auto toggler-colour" data-toggle="collapse" data-target="#navbar_menu">
+                <span class="sr-only">Navigation Button</span>
+                <span class="navbar-toggler-icon toggler-colour"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar_menu">
+                <ul class="navbar-nav ml-auto"> <!-- Objects should have defaulted to right anyway so unsure why "ml-auto" is needed -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/schedule_tickets.html">Schedule & Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/timeline.html">timeline</a> <!-- Change back to correct one -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/the_crew.html">The Crew</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/the_train.html">The Train</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/gallery.html">Gallery <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact_us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Would You Look at That!</h1>
+            <p>Still wondering what the Santa Special is all about? Click the images to enlarge them or 
+            play the videos. This is only a small selection to whet your appetite. Check out the RPSI 
+            social media pages to see much more.</p>
+        </section>
+        <section class="container-fluid" id="gallery_columns_container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 gallery_column" id="gallery_column_1">
+                        <div class="ticket_background_div">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YDULb2EsTY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 gallery_column" id="gallery_column_1">
+                        <div class="ticket_background_div">
+                            <img src="https://i.imgur.com/oGRgTn1.jpg" alt="No.85 Merlin & GNR Plate" class="gallery_image">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 reviews_column" id="review_2">
+                        <div class="ticket_background_div">
+                            <img src="https://i.imgur.com/MRyXFeh.png" alt="The engineers taking a rest" class="gallery_image">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 reviews_column" id="review_2">
+                        <div class="ticket_background_div">
+                            <img src="https://i.imgur.com/MRyXFeh.png" alt="Santa his elves and a family" class="gallery_image">
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer_trim">
+        </div>
+        <div class="container-fluid container_footer">
+            <div class="row" id="footer_details">
+                <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
+                    <div class="row">
+                        <div class="col-12" id="logo_footer_div"> 
+                            <img src="https://i.imgur.com/WjTeKiF.png" alt="RPSI Logo" id="logo_footer">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
+                    <div class="row">
+                        <div class="col-12" id="tickets_footer_div"> 
+                            <h5><a href="#">Tickets</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
+                    <div class="row">
+                        <div class="col-12" id="contact_us_footer_div"> 
+                            <h5><a href="#">Contact Us</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
+                    <div class="row">
+                        <div class="col-12" id="stay_informed_footer_div"> 
+                            <h5>Stay Informed?</h5>
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="emailaddress" class="form-control input-sm" id="stay_informed_email_footer" placeholder="Email" required/>
+                                    <!-- ? Why is "input-sm" not having any effect? -->
+                                </div>
+                                <button type="submit" class="form_buttons" id="stay-informed_yes_button_footer">Yes!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
+                    <div class="row">
+                        <div class="col-12" id="social_footer"> 
+                            <h5>We're Social</h5>
+                            
+                            <ul class="list-inline social-links">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/steamtrainsireland/" target="_blank" class="icons_footer">
+                                    <i class="fab fa-facebook-square"></i>
+                                    <span class="sr-only">Facebook</span>
+                                    </a>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <a href="https://twitter.com/rpsitrains" target="_blank" class="icons_footer">
+                                    <i class="fab fa-twitter-square"></i>
+                                    <span class="sr-only">Twitter</span>
+                                    </a>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com/steamtrainsireland" target="_blank" class="icons_footer">
+                                    <i class="fab fa-instagram-square"></i>
+                                    <span class="sr-only">Instagram</span>
+                                    </a>
+                                </li> 
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
+                    <div class="row">
+                        <div class="col-12" id="copyright_footer"> 
+                            <h5><a href="#">&copy 2020 Cathal Dolan</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
