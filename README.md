@@ -632,4 +632,4 @@ https://deviceatlas.com/blog/most-popular-smartphones#ireland
 /*--- Code Comment */
 /*?--- Code Query ?*/
 
-Timeline info - Tristan White https://youtu.be/3qNgNs_ziJk https://codepen.io/triss90/pen/RraEmM
+Timeline info - Tristan White https://codepen.io/nickoafan http://www.iamrohit.in/make-static-horizontal-responsive-timeline-design-using-pure-css/

@@ -53,3 +53,13 @@
         display: none;
     }
 }
+
+@media (max-width: 1025px) and (min-width: 992px) { /*-- This was to shrink the images so that would fit on an ipad pro, but keep same size on PC and mobile */
+    #circle_container {
+        height: 200px;
+        width: 200px;
+        padding: 10px; 
+        margin: 2em auto;
+    }
+}
+
