@@ -36,6 +36,12 @@ main section a {
     }
 }
 
+@media (min-width: 769px) {
+    form #fullname, form #emailaddress {
+        width: 60%;
+    }
+}
+
 @media (max-width: 450px) { /* This allows the form to fit 100% on mobile portrait screens while keeping the intro section to the consistent 90% width */
     main {
         width: 100%;
@@ -54,7 +60,7 @@ main section a {
 }
 
 .form-control {
-    width: 96%;
+    width: 95%;
     margin: 2% 2% 0% 2%;
 }
 
@@ -77,13 +83,10 @@ span.contact_details_title { /*-- Highlights the different office location names
     #contact_details_sm_down { /*-- Hides the horizontal "pc" style address on small devices */
         display: none;
     }
-    form #fullname, form #email {
-        width: 80%;
-    }
 }
 
-@media (max-width: 768px) { /*-- Hides the vertical "mobile" style address on medium and up devices */
-    #contact_details_md_up {
+@media (max-width: 768px) { 
+    #contact_details_md_up { /*-- Hides the vertical "mobile" style address on medium and up devices */
     display: none;
     }
 }
