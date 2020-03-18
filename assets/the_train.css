@@ -1,3 +1,9 @@
+/*======================================== Section Start */
+/*~~~~~~~~~~~~~~~~~~~~ Sub-Section Start */
+/*========== Section End */
+/*--- Code Comment */
+/*?--- Code Query ?*/
+
 .hero_image.the_train {
     background-image: url(https://i.imgur.com/SbKHZE1.jpg);
 }
@@ -8,6 +14,8 @@
     }
 }
 
+
+/*~~~~~~~~~~~~~~~~~~~~ Information Cards Images Start */
 
 .circle_bg_cover, #no85_image {
     background: url(https://i.imgur.com/Saoiuxu.png) no-repeat center center;
@@ -21,33 +29,40 @@
     background: url(https://i.imgur.com/bUa5q9f.png) no-repeat center center;
 }
 
+@media (min-width: 698px) and (max-width: 1177px) { /*-- Hiding of "Craven Carriages" column in main section on tablets */
+#craven_carriages_container_div {
+    display: none;
+    }
+}
 
-.personal-info-item {
+/*~~~~~~~~~~~~~~~~~~~~ Train Specifics Start */
+
+.train_cards_specifics {
     margin-bottom: 20px;
     display: block;
     clear: both;
     text-align: left;
 }
 
-.personal-info-item .key,
-.personal-info-item .value {
+.train_cards_specifics .key,
+.train_cards_specifics .value {
     padding-right: 8px;
     display: inline-block;
 }
 
-.personal-info-item .key p,
-.personal-info-item .value p {
+.train_cards_specifics .key p,
+.train_cards_specifics .value p {
     margin: 0;
 }
 
-.personal-info-item .key {
+.train_cards_specifics .key {
     font-weight: bold;
     width: 30%;
     padding-top: 2px;
     vertical-align: top;
 }
 
-.personal-info-item .value {
+.train_cards_specifics .value {
     position: relative; 
     width: 65%;
     padding-top: 2px;

@@ -340,7 +340,7 @@ main {
     margin: 1em 0 2em 0;
 }
 
-@media (max-width: 1177px) { /*-- Hiding of "sit back" column in main section */
+@media (max-width: 1177px) { /*-- Hiding of "sit back" column in main section on tablets */
 #sit_back_container_div {
     display: none;
     }
