@@ -438,7 +438,7 @@ sub-office in the Republic of Ireland.
 [v4.4.1](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 Bootstrap is used in this project for the following elements:
 - [Navbar](https://getbootstrap.com/docs/4.4/components/navbar/)
-- etc.
+- Contact Us form
 
 ## **3.2 - Imgur**
 All images used on this site and in this readme are stored and hosted on Cloudinary.
@@ -632,4 +632,4 @@ https://deviceatlas.com/blog/most-popular-smartphones#ireland
 /*--- Code Comment */
 /*?--- Code Query ?*/
 
-Timeline info - Tristan White https://codepen.io/nickoafan http://www.iamrohit.in/make-static-horizontal-responsive-timeline-design-using-pure-css/
+Timeline info - "Nickoafan" https://codepen.io/nickoafan/pen/eJMaBx

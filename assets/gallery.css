@@ -22,9 +22,12 @@
     text-align: center;
 }
 
+.gallery_image iframe, .gallery_image {
+    height: 137px;
+    width: 208px;
+}
+
 .gallery_image {
-    height: 144px;
-    width: 216px;
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -33,10 +36,7 @@
     z-index: 3;
 }
 
-.gallery_image iframe {
-    height: 144px;
-    width: 216px;
-}
+
 
 
 /*~~~~~~~~~~~~~~~~~~~~ Gallery Images Size Adjust Start */

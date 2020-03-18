@@ -20,3 +20,37 @@
 .circle_bg_cover, #craven_carriages_image {
     background: url(https://i.imgur.com/bUa5q9f.png) no-repeat center center;
 }
+
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+    text-align: left;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    font-weight: bold;
+    width: 30%;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .value {
+    position: relative; 
+    width: 65%;
+    padding-top: 2px;
+    vertical-align: top;
+    left: 15px;
+}

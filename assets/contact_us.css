@@ -37,7 +37,7 @@ main section a {
 }
 
 @media (min-width: 769px) {
-    form #fullname, form #emailaddress {
+    form #full_name, form #email_address {
         width: 60%;
     }
 }
@@ -59,11 +59,36 @@ main section a {
     }
 }
 
+.form-control, .form-check-input {
+    background-color: #f8f8f8;
+    border-color: #8E1D23;
+}
+
 .form-control {
     width: 95%;
     margin: 2% 2% 0% 2%;
 }
 
+.form-check-input {
+    height: 20px;
+    width: 20px;
+
+}
+
+.form-check-label {
+    margin-left: 2%;
+}
+
+div.form-check.form-group, .form-text.text-muted {
+    margin-left: 2%;
+    color: #f8f8f8 !important; /*-- Required to make the muted text change */
+}
+
+.form_buttons {
+    margin-top: 0;
+    margin-left: 2%;
+    margin-bottom: 1rem;
+}
 
 /*======================================== Contact Details Start */
 

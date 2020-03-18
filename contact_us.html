@@ -38,7 +38,7 @@
                         <a class="nav-link" href="/timeline.html">timeline</a> <!-- Change back to correct one -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/the_crew.html">The Crew <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/the_crew.html">The Crew</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/the_train.html">The Train</a>
@@ -47,31 +47,39 @@
                         <a class="nav-link" href="/gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact_us.html">Contact Us</a>
+                        <a class="nav-link active" href="/contact_us.html">Contact Us  <span class="sr-only">(current)</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section id="contact_us_introduction">
+        <section id="contact_us_introduction" class="page_introduction">
             <h1>Say Hello</h1>
-            <p>Do you have a question, a comment, a complaint, a suggestion, wondering about tickets (did you check out the <span><a href="/schedule_tickets.html" target="_blank">Schedule 
-            & Tickets</a></span> page?), mislaid something on the train, mislaid someone on the train, or do you just want to say hello? Please 
-            drop us a line, we’d love to hear from you.</p>
+            <p>Do you have a question, a comment, a complaint, a suggestion, wondering about tickets (did you check out the 
+            <span><a href="/schedule_tickets.html" target="_blank">Schedule & Tickets</a></span> 
+            page?), maybe you mislaid something on the train, maybe you mislaid somebody on the train, or do you just want 
+            to say hello? Please do drop us a line, we’d love to hear from you.</p>
         </section>
         <br/>
 
         <div id="contact_us_form_container">
             <form>
-                <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
-                <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>
-                <textarea rows="5" name="say_what_you_want" id="say_what_you_want" class="form-control" placeholder="Say what you want..." required/></textarea>
-                <div class="form-row text-center">
-                    <div class="col">
-                        <button type="submit" class="form_buttons" id="contact_us_form_button">Send</button>
-                    </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="full_name" aria-describedby="emailHelp" placeholder="Name">
                 </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email_address" aria-describedby="emailHelp" placeholder="Email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" name="say_what_you_want" id="say_what_you_want" class="form-control" placeholder="Say what you want..." required/></textarea>
+                </div>
+                <div class="form-check form-group">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Stay informed?</label>
+                </div>
+                <button type="submit" id="contact_us_form_button" class="form_buttons">Submit</button>
             </form>
         </div>
         <br/>
