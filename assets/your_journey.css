@@ -13,7 +13,7 @@
 }
 
 
-/*======================================== Timeline == Start */
+/*======================================== Vertical Timeline == Start */
 
 .ps-timeline-sec {
   position: relative;
@@ -26,81 +26,85 @@
 /*~~~~~~~~~~~~~~~~~~~~ Timeline "Bookends" ~~ Start */
 
 .ps-timeline-sec .container ol:before {
-  background: #8E1D23;
-  content: "";
-  width: 2px;
-  height: 15px;
-  position: absolute; /*-- positioned relative to ".container" */
-  top: -350%; /* In dev tools I can see that container is 2px, but unsure why I need 350% to centre it */
+    background: #8E1D23;
+    content: "";
+    width: 2px;
+    height: 15px;
+    position: absolute; /*-- positioned relative to ".container" */
+    top: -350%; /* In dev tools I can see that container is 2px, but unsure why I need 350% to centre it */
 }
 .ps-timeline-sec .container ol:after {
-  background: #8E1D23;
-  content: "";
-  width: 2px;
-  height: 15px;
-  position: absolute;
-  top: -350%
+    background: #8E1D23;
+    content: "";
+    width: 2px;
+    height: 15px;
+    position: absolute;
+    top: -350%
 }
-
-
 
 .ps-timeline-sec .container ol.ps-timeline { /*This is the actual "line". I'm unsure about the selector string */
-  margin: 295px 0 320px 0; /* This is what pushed the entire thing down the page and inbetween header/into and the footer. I can't see how it works  */
-  padding: 0px;
-  border-top: 2px solid #8E1D23;
-  list-style: none;
+    margin: 295px 0 320px 0; /* This is what pushed the entire thing down the page and inbetween header/into and the footer. I can't see how it works  */
+    padding: 0px;
+    border-top: 2px solid #8E1D23;
+    list-style: none;
 }
+
 .ps-timeline-sec .container ol.ps-timeline li { /* Determines the width and position of each "event" along the timeline */
-  float: left;
-  width: 16.65%; /* width of each element on the timeline */
-  padding-top: 25px; /* can't figure this bit out */
-  position: relative; 
+    float: left;
+    width: 16.65%; /* width of each element on the timeline */
+    padding-top: 25px; /* can't figure this bit out */
+    position: relative; 
 }
+
 .ps-timeline-sec .container ol.ps-timeline li span { /*these are the markers along the timeline */
-  width: 16px;
-  height: 16px;
-  margin: 17px -8px 0 0; /*-- Positions the markers on the timeline */
-  background: #8E1D23;
-  border-radius: 50%;
-  position: absolute;
-  top: -26px;
-  left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: 17px -8px 0 0; /*-- Positions the markers on the timeline */
+    background: #8E1D23;
+    border-radius: 50%;
+    position: absolute;
+    top: -26px;
+    left: 50%;
 }
 
 .ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 100px;
-  width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 100px;
+    width: 100%;
 }
-.ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
-  display: table; /* I've never used tables. Need to check this out. Seems to help centre the image */
-  margin: 0 auto;
-}
-.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
-  position: absolute;
-  margin-top: 40px;
-  width: 100%;
-}
-.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot img {
-  display: table;
-  margin: 0 auto;
-}
-.ps-timeline-sec .container ol.ps-timeline li p {
-  text-align: center;
-  font-weight: bold;
-  color: #8E1D23;
 
-  position: absolute;
-  bottom: -55px;
-  width: 200px; /* Width needed to match #circle_container as this element is positioned relative to it */
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
+    display: table; /* I've never used tables. Need to check this out. Seems to help centre the image */
+    margin: 0 auto;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
+    position: absolute;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot img {
+    display: table;
+    margin: 0 auto;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li p {
+    text-align: center;
+    font-weight: bold;
+    color: #8E1D23;
+
+    position: absolute;
+    bottom: -55px;
+    width: 200px; /* Width needed to match .circle_container as this element is positioned relative to it */
 }
 
 .ps-timeline-sec .container ol.ps-timeline li .timeline_beneath_code { /*-- Required to push the text up from the image container beneath --*/
     top: -45px;
 }
 
-#circle_container {
+.circle_container {
     height: 200px;
     width: 200px;
     padding: 8px; 
@@ -109,8 +113,8 @@
     margin: 0 auto;
 }
 
-@media (min-width: 1160px) and (max-width: 1375px) { /* Allows the timeline to resize properly on medium screens */
-    #circle_container {
+@media (min-width: 1160px) and (max-width: 1375px) { /* Allows images to shrink so that the timeline resizes properly on medium screens */
+    .circle_container {
         height: 175px;
         width: 175px;
         padding: 6px; 
@@ -126,7 +130,7 @@
 }
 
 @media (min-width: 750px) and (max-width: 1159px) { /* Allows the timeline to resize properly on medium screens */
-    #circle_container {
+    .circle_container {
         height: 125px;
         width: 125px;
         padding: 4px; 
@@ -172,104 +176,140 @@
 
 /* Mobile Version */
 
-/*-- Timeline Line & Bookends Start --*/
+ /*@media (max-width: 749px) {
 
-@media screen and (max-width: 767px) {
-    #circle_container  { /*-- Temp to hide the pictures while working on laying out text --*/
-        display: none;
+    .img-handler-top {
+        margin-bottom: 30px;
     }
 
-  .ps-timeline-sec .container ol:before {
-    background: #8E1D23;
-    content: "";
-    width: 10px;
-    height: 2px;
-    position: absolute;
-    top: 0px !important;
-    left: 36px !important;
-  }
-  .ps-timeline-sec .container ol:after {
-    background: #8E1D23;
-    content: "";
-    width: 10px;
-    height: 2px;
-    position: absolute;
-    top: inherit !important; /*--? Inherited from what? */
-    left: 36px;
-  }
+    .timeline_text {
+        padding: 4em 2em 0em 2em;
+        position: relative;
+        border-left: 1px solid #fafafa;
+    }
 
-  .ps-timeline-sec .container ol.ps-timeline { /*--This is the actual timeline line --*/
-    margin: 130px 0 !important;
-    border-left: 2px solid #8E1D23;
-    padding-left: 0 !important;
-    padding-top: 120px !important;
-    border-top: 0 !important;
-    margin-left: 25px !important;
-  }
+    .timeline_text p {
+        padding: 0;
+        margin: 0;
+    }
 
-  .ps-timeline-sec .container ol.ps-timeline li { /*-- This is each individual section of the timeline line apart from top and bottom --*/
-    height: 220px;
-    float: none !important;
-    width: inherit !important;
-  }
+    .timeline_text:before {
+        content: attr(data-dates);
+        position: absolute;
+        left: 2.5em;
+        top: 3em;
+        display: block;
+        font-family: "Exo", sans-serif;
+        font-weight: 500;
+        font-size: 0.8em;
+        padding: 0;
+        margin: 0;
+    }
 
-/*-- Timeline Line & Bookends End --*/
+    .timeline_text:after {
+        width: 12px;
+        height: 12px;
+        display: block;
+        top: 2.4em;
+        position: absolute;
+        left: -6px;
+        border-radius: 12px;
+        content: '';
+        background: #fafafa;
+    }
+} */
 
-  .ps-timeline-sec .container ol.ps-timeline li:nth-child(2) .img-handler-bot img {
-    width: 70px;
-  }
-  .ps-timeline-sec .container ol.ps-timeline li:last-child {
-    margin: 0;
-    bottom: 0 !important;
-    height: 120px;
-  }
-  .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot {
-    bottom: 40px !important;
-    width: 40% !important;
-    margin-left: 25px !important;
-    margin-top: 0 !important;
-  }
-  .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot img {
-    width: 100%;
-  }
-  .ps-timeline-sec .container ol.ps-timeline li span { /*-- These are the markers along the timeline --*/
-    left: -9px !important;
-  }
+/*~~~~~~~~~~~~~~ Mobile Devices ~~ Start --*/
+
+/*~~~~~~~ Timeline Line & Bookends ~~ Start --*/
+
+@media screen and (max-width: 767px) {
+
+    .ps-timeline-sec .container ol:before { /*-- Top vertical bookend --*/
+        background: #8E1D23;
+        content: "";
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        top: 0px !important;
+        left: 21px !important; /*-- Centers it on the timeline relative to the .container div --*/
+    }
+
+    .ps-timeline-sec .container ol:after { /*-- Bottom vertical bookend --*/
+        background: #8E1D23;
+        content: "";
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        top: inherit !important; /*--? Inherited from what? --*/
+        left: 21px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline { 
+        margin: 0 0 35px 0 !important;
+        border-left: 2px solid #8E1D23; /*-- This is the actual timeline line --*/
+        padding-left: 0 !important;
+        padding-top: 120px !important; /*-- This seems to create the spur between the top bookend and first marker.
+        Lost with it as there doesn't appear to be the same for the bottom --*/
+        border-top: 0 !important;
+        margin-left: 10px !important; /*--? When I put this in "margin" above, it doesn't work. Why? --*/
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li { /*-- This is each individual section of the timeline between the markers,
+    but not the top and bottom spurs.*/
+
+        height: 220px;
+        float: none !important;
+        width: inherit !important; /*--? Inherited from what? --*/
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li span { /*-- These are the markers along the timeline --*/
+        left: -9px !important;
+    }
+
+/*~~~~~~~ Timeline Line & Bookends End --*/
+
+    .circle_container {
+        height: 175px;
+        width: 175px;
+        padding: 6px; 
+    }
   
-  .ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
-    position: absolute !important;
-    top: 0px !important;
-    width: 60% !important;
-    float: left !important;
-    margin-left: 35px !important;
-    margin-bottom: 0 !important;
+    .ps-timeline-sec .container ol.ps-timeline li .img-handler-top { /* Removing this aligned all three top texts with the timeline
+    and moved them up */
+        position: absolute !important;
+        top: -80px !important;
+        width: 300px !important;
+        float: left !important;
+        margin-left: 65px !important;
+
+    }
+  
+    .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot { /* Removing this aligned all three top texts with the timeline
+    and moved the first two up. Maynooth just moved left */
+        position: absolute !important;
+        bottom: 0 !important;
+        width: 300px !important;
+        float: left !important;
+        margin-left: 55px !important; /*--? I'd have though this should be as wide as the .img-handler-top, but it's not. Why? --*/
+        margin-bottom: 120px !important;
+    }
+
+    .container .img-handler-bot .circle-container { 
+        padding: 0 !important;
+    }
+  
+    .ps-timeline-sec .container ol.ps-timeline li p { /*-- Aligns text left to the timeline --*/
+        text-align: left !important;
   }
-  .ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
-    margin: 0 auto !important;
-    width: 80% !important;
-  }
-  .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
-    position: absolute !important;
-    bottom: 115px !important;
-    width: 60% !important;
-    float: left !important;
-    margin-left: 35px !important;
-    margin-bottom: 0 !important;
-  }
-  .ps-timeline-sec .container ol.ps-timeline li p {
-    text-align: left !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-  }
+
     .ps-timeline-sec .container ol.ps-timeline li .timeline_text {
-   
-        color: blue !important;
         top: 0;
         transform: rotate(-30deg);
     }
 
+
+/*
     .ps-timeline-sec .container ol.ps-timeline li #croke_park_p {
         position: absolute;
         top: -82px;
@@ -287,6 +327,14 @@
         top: -82px;
         left: 55px;
     }
-}
+
+    .ps-timeline-sec .container ol.ps-timeline li #croke_park_p {
+        position: absolute;
+        top: -82px;
+        left: 55px;
+    }
+
+    
+} */
 
 /* Mobile End */
