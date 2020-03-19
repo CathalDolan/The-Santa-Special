@@ -633,3 +633,6 @@ https://deviceatlas.com/blog/most-popular-smartphones#ireland
 /*?--- Code Query ?*/
 
 Timeline info - "Nickoafan" https://codepen.io/nickoafan/pen/eJMaBx
+
+Navbar /*-- This code came from https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color 
+with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=youtu.be */

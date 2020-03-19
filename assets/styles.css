@@ -288,19 +288,21 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
     font-weight: bold;
 } /*-- ? Why doesn't ".active a" have the same affect? --*/
 
-@media (max-width: 820px) { /*-- This needs to match the figure in the logo media query --*/
-.navbar {
-    position: absolute;
-    top: 2em;
-    right: 1em;
-    }
-
-    .nav-bg-colour { /*-- ? This is here because I wanted to make the background transparent so that it's not visible, but it's making the icon transparent too. Why? --*/
-        opacity:rgba(142, 29, 35, 0.5);
-    }
+a.nav-link {
+    font-size: 18px;
 }
 
-/*========== Header End */
+@media (max-width: 820px) { /*-- This needs to match the figure in the logo media query --*/
+    .navbar {
+        position: absolute;
+        top: 2em;
+        right: 1em;
+    }
+
+    nav.nav-bg-colour { /*-- ? This is here because I wanted to make the background transparent so that it's not visible, but it's making the icon transparent too. Why? --*/
+        opacity:#8E1D23aa;
+    }
+}
 
 
 /*======================================== Home Page Start */

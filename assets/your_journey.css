@@ -1,5 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
 
+/*======================================== Hero Image Start */
+
+.hero_image.your_journey {
+    background-image: url(https://i.imgur.com/12FOs7X.jpg);
+}
+
+@media (max-width: 576px) { /*-- Smaller image on mobile devices */
+    .hero_image.your_journey {
+    background-image: url(https://i.imgur.com/eouyicP.jpg);
+    }
+}
+
+
+/*======================================== Timeline == Start */
+
 .ps-timeline-sec {
   position: relative;
   background: #fff;
@@ -8,7 +23,7 @@
   position: relative;
 }
 
-/* The time line "bookends" start */
+/*~~~~~~~~~~~~~~~~~~~~ Timeline "Bookends" ~~ Start */
 
 .ps-timeline-sec .container ol:before {
   background: #8E1D23;
@@ -27,19 +42,19 @@
   top: -350%
 }
 
-/* The time line "bookends" end */
+
 
 .ps-timeline-sec .container ol.ps-timeline { /*This is the actual "line". I'm unsure about the selector string */
-  margin: 390px 0; /* This is what pushed the entire thing down the page. */
+  margin: 295px 0 320px 0; /* This is what pushed the entire thing down the page and inbetween header/into and the footer. I can't see how it works  */
   padding: 0px;
   border-top: 2px solid #8E1D23;
   list-style: none;
 }
-.ps-timeline-sec .container ol.ps-timeline li {
+.ps-timeline-sec .container ol.ps-timeline li { /* Determines the width and position of each "event" along the timeline */
   float: left;
   width: 16.65%; /* width of each element on the timeline */
-  padding-top: 30px; /* can't figure this bit out */
-  position: relative;
+  padding-top: 25px; /* can't figure this bit out */
+  position: relative; 
 }
 .ps-timeline-sec .container ol.ps-timeline li span { /*these are the markers along the timeline */
   width: 16px;
@@ -92,6 +107,38 @@
     border: 1px solid #8E1D23;
     border-radius: 50%;
     margin: 0 auto;
+}
+
+@media (min-width: 1160px) and (max-width: 1375px) { /* Allows the timeline to resize properly on medium screens */
+    #circle_container {
+        height: 175px;
+        width: 175px;
+        padding: 6px; 
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li p {
+        width: 175px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline {
+        margin: 250px 0 270px 0;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1159px) { /* Allows the timeline to resize properly on medium screens */
+    #circle_container {
+        height: 125px;
+        width: 125px;
+        padding: 4px; 
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li p {
+        width: 125px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline {
+        margin: 200px 0 215px 0;
+    }
 }
 
 .circle_bg_cover {

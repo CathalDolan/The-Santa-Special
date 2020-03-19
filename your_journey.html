@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/e4ebc8dc15.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+    <link rel="stylesheet" href="/assets/your_journey.css" type="text/css">
     <title>Santa Special</title>
 </head>
 <body>
@@ -28,13 +29,13 @@
             <div class="collapse navbar-collapse" id="navbar_menu">
                 <ul class="navbar-nav ml-auto"> <!-- Objects should have defaulted to right anyway so unsure why "ml-auto" is needed -->
                     <li class="nav-item">
-                        <a class="nav-link active" href="/index.html">Home </a>
+                        <a class="nav-link" href="/index.html">Home </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/schedule_tickets.html">Schedule & Tickets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/timeline.html">timeline <span class="sr-only">(current)</span></a> <!-- Change back to correct one -->
+                        <a class="nav-link active" href="/your_journey.html">Your Journey <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/the_crew.html">The Crew</a>
@@ -62,7 +63,74 @@
             Santa and his Elves) before turning around again. All the while you get to sit back and have fun with 
             the kids, enjoy the live music, and indulge in the refreshments we have on offer.</p>
         </section>
+        <section class="ps-timeline-sec"> <!-- Timeline created with assistance from https://codepen.io/nickoafan. His basic code was manipulated to meet requirements -->
+            <div class="container">
+                <ol class="ps-timeline">
+                    <li>
+                        <div class="img-handler-top">
+                            <div id="circle_container">
+                                <div class="circle_bg_cover" id="connolly_station">
+                                </div>
+                            </div>
+                            <p class="timeline_text" id="connolly_station_p">Connolly Station</p>
+                        </div>
+                        <span class="ps-sp-bot"></span>
+                    </li>
+                    <li>
+                        <div class="img-handler-bot">
+                            <p class="timeline_beneath_code timeline_text" id="croke_park_p">Croke Park</p>
+                            <div id="circle_container">
+                                <div class="circle_bg_cover" id="croke_park">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="ps-sp-top"></span>
+                    </li>
+                    <li>
+                        <div class="img-handler-top">
+                            <div id="circle_container">
+                                <div class="circle_bg_cover" id="m50_m3_junction">
+                                </div>
+                            </div>
+                            <p class="timeline_text" id="m50_m3_junction_p">M50/M3 Junction</p>
+                        </div>
+                        <span class="ps-sp-bot"></span>
+                    </li>
+                    <li>
+                        <div class="img-handler-bot">
+                            <p class="timeline_beneath_code timeline_text" id="royal_canal_p">Royal Canal</P>
+                            <div id="circle_container">
+                                <div class="circle_bg_cover" id="royal_canal">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="ps-sp-top"></span>
+                    </li>
+                    <li>
+                        <div class="img-handler-top">
+                            <div id="circle_container">
+                                <div class="circle_bg_cover" id="carton_house">
+                                </div>
+                            </div>
+                            <p class="timeline_text" id="carton_house_p">Carton House</p>
+                        </div>
+                        <span class="ps-sp-bot"></span>
+                    </li>
+                    <li>
+                        <div class="img-handler-bot">
+                            <p class="timeline_beneath_code timeline_text" id="maynooth_p">Maynooth</P>
+                            <div id="circle_container">
+                                <div class="circle_bg_cover" id="maynooth">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="ps-sp-top"></span>
+                    </li>
+                </ol>
+            </div>
+        </section>
     </main>
+    
     <footer>
         <div id="footer_trim">
         </div>
