@@ -67,27 +67,21 @@
     left: 50%;
 }
 
-.ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top { /*-- Pushes top images up from below timeline --*/
     position: absolute;
     bottom: 0;
     margin-bottom: 100px;
     width: 100%;
 }
 
-.ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
-    display: table; /* I've never used tables. Need to check this out. Seems to help centre the image */
-    margin: 0 auto;
-}
-
-.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot { /*-- Pushes bottom text down from above the timeline --*/
     position: absolute;
     margin-top: 40px;
     width: 100%;
 }
 
-.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot img {
-    display: table;
-    margin: 0 auto;
+.ps-timeline-sec .container ol.ps-timeline li .timeline_beneath_code { /*-- Required to push the text up from the image container beneath --*/
+    top: -45px;
 }
 
 .ps-timeline-sec .container ol.ps-timeline li p {
@@ -100,9 +94,8 @@
     width: 200px; /* Width needed to match .circle_container as this element is positioned relative to it */
 }
 
-.ps-timeline-sec .container ol.ps-timeline li .timeline_beneath_code { /*-- Required to push the text up from the image container beneath --*/
-    top: -45px;
-}
+
+/*-- Start of images I think */
 
 .circle_container {
     height: 200px;
@@ -174,54 +167,8 @@
     background: url(https://i.imgur.com/L2oFRw3.png) no-repeat center center;
 }
 
-/* Mobile Version */
 
- /*@media (max-width: 749px) {
-
-    .img-handler-top {
-        margin-bottom: 30px;
-    }
-
-    .timeline_text {
-        padding: 4em 2em 0em 2em;
-        position: relative;
-        border-left: 1px solid #fafafa;
-    }
-
-    .timeline_text p {
-        padding: 0;
-        margin: 0;
-    }
-
-    .timeline_text:before {
-        content: attr(data-dates);
-        position: absolute;
-        left: 2.5em;
-        top: 3em;
-        display: block;
-        font-family: "Exo", sans-serif;
-        font-weight: 500;
-        font-size: 0.8em;
-        padding: 0;
-        margin: 0;
-    }
-
-    .timeline_text:after {
-        width: 12px;
-        height: 12px;
-        display: block;
-        top: 2.4em;
-        position: absolute;
-        left: -6px;
-        border-radius: 12px;
-        content: '';
-        background: #fafafa;
-    }
-} */
-
-/*~~~~~~~~~~~~~~ Mobile Devices ~~ Start --*/
-
-/*~~~~~~~ Timeline Line & Bookends ~~ Start --*/
+/*~~~~~~~ Mobile Version */
 
 @media screen and (max-width: 767px) {
 
@@ -267,22 +214,24 @@
         left: -9px !important;
     }
 
-/*~~~~~~~ Timeline Line & Bookends End --*/
+
+/*~~~~~~~ Images & Positioning ~~ Start --*/
 
     .circle_container {
-        height: 175px;
-        width: 175px;
-        padding: 6px; 
+        height: 150px;
+        width: 150px;
+        padding: 6px;
+        margin-left: 125px;
+        margin-right: 0;        
     }
   
     .ps-timeline-sec .container ol.ps-timeline li .img-handler-top { /* Removing this aligned all three top texts with the timeline
     and moved them up */
         position: absolute !important;
         top: -80px !important;
-        width: 300px !important;
+        width: 290px !important;
         float: left !important;
-        margin-left: 65px !important;
-
+        margin-left: 15px !important;
     }
   
     .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot { /* Removing this aligned all three top texts with the timeline
@@ -291,50 +240,20 @@
         bottom: 0 !important;
         width: 300px !important;
         float: left !important;
-        margin-left: 55px !important; /*--? I'd have though this should be as wide as the .img-handler-top, but it's not. Why? --*/
-        margin-bottom: 120px !important;
+        margin-left: 15px !important; /*--? I'd have thought this should be as wide as the .img-handler-top, but it's not. Why? --*/
+        margin-bottom: 135px !important;
     }
 
-    .container .img-handler-bot .circle-container { 
-        padding: 0 !important;
-    }
   
     .ps-timeline-sec .container ol.ps-timeline li p { /*-- Aligns text left to the timeline --*/
         text-align: left !important;
-  }
+    }
 
     .ps-timeline-sec .container ol.ps-timeline li .timeline_text {
+        height: 2rem;
         top: 0;
         transform: rotate(-30deg);
     }
-
-
-/*
-    .ps-timeline-sec .container ol.ps-timeline li #croke_park_p {
-        position: absolute;
-        top: -82px;
-        left: 55px;
-    }
-
-    .ps-timeline-sec .container ol.ps-timeline li #m50_m3_junction_p {
-        position: absolute;
-        top: -82px;
-        left: 55px;
-    }
-
-    .ps-timeline-sec .container ol.ps-timeline li #royal_canal_p {
-        position: absolute;
-        top: -82px;
-        left: 55px;
-    }
-
-    .ps-timeline-sec .container ol.ps-timeline li #croke_park_p {
-        position: absolute;
-        top: -82px;
-        left: 55px;
-    }
-
-    
-} */
+}
 
 /* Mobile End */
