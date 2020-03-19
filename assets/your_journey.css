@@ -13,11 +13,10 @@
 }
 
 
-/*======================================== Vertical Timeline == Start */
+/*======================================== Timeline == Start */
 
 .ps-timeline-sec {
   position: relative;
-  background: #fff;
 }
 .ps-timeline-sec .container {
   position: relative;
@@ -255,5 +254,3 @@
         transform: rotate(-30deg);
     }
 }
-
-/* Mobile End */

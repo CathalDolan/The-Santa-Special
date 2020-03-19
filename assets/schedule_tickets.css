@@ -17,3 +17,205 @@
 main section a {
     color: #5B5B5B !important; /*!important is required here, because it was used on the Global_Index css page. Relook at! */
 }
+
+/*======================================== Timeline == Start */
+
+.ps-timeline-sec {
+  position: relative;
+}
+.ps-timeline-sec .container {
+  position: relative;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~ Timeline "Bookends" ~~ Start */
+
+.ps-timeline-sec .container ol:before {
+    background: #8E1D23;
+    content: "";
+    width: 2px;
+    height: 15px;
+    position: absolute; /*-- positioned relative to ".container" */
+    top: -350%; /* In dev tools I can see that container is 2px, but unsure why I need 350% to centre it */
+}
+.ps-timeline-sec .container ol:after {
+    background: #8E1D23;
+    content: "";
+    width: 2px;
+    height: 15px;
+    position: absolute;
+    top: -350%
+}
+
+.ps-timeline-sec .container ol.ps-timeline { /*This is the actual "line". I'm unsure about the selector string */
+    margin: 165px 0 175px 0; /* This is what pushed the entire thing down the page and inbetween header/into and the footer. I can't see how it works  */
+    padding: 0px;
+    border-top: 2px solid #8E1D23;
+    list-style: none;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li { /* Determines the width and position of each "event" along the timeline */
+    float: left;
+    width: 16.65%; /* width of each element on the timeline */
+    padding-top: 25px; /* can't figure this bit out */
+    position: relative; 
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span { /*these are the markers along the timeline */
+    width: 16px;
+    height: 16px;
+    margin: 17px -8px 0 0; /*-- Positions the markers perpendicularly on the timeline */
+    background: #8E1D23;
+    border-radius: 50%;
+    position: absolute;
+    top: -26px;
+    left: 50%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top { /*-- Pushes top tickets up from below timeline --*/
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 55px;
+    width: 100%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li p {
+    text-align: center;
+    font-weight: bold;
+    color: #8E1D23;
+
+    position: absolute;
+    bottom: -55px;
+    width: 200px; /* Width needed to match .ticket_background_container as this element is positioned relative to it */
+}
+
+
+/*-- Start of images I think */
+
+.ticket_background_container {
+    background: url(https://i.imgur.com/MRyXFeh.png) no-repeat center center;
+    background-size: cover;
+    height: 122px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1160px) and (max-width: 1375px) { /* Allows images to shrink so that the timeline resizes properly on medium screens */
+    .ticket_background_container {
+        height: 107px;
+        width: 175px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li p {
+        width: 175px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline {
+        margin: 130px 0 150px 0; 
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1159px) { /* Allows the timeline to resize properly on medium screens */
+    .ticket_background_container {
+        height: 76px;
+        width: 125px; 
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li p {
+        width: 125px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline {
+        margin: 95px 0 115px 0;
+    }
+}
+
+
+
+
+/*~~~~~~~ Mobile Version */
+
+@media screen and (max-width: 767px) {
+
+    .ps-timeline-sec .container ol:before { /*-- Top vertical bookend --*/
+        background: #8E1D23;
+        content: "";
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        top: 0px !important;
+        left: 21px !important; /*-- Centers it on the timeline relative to the .container div --*/
+    }
+
+    .ps-timeline-sec .container ol:after { /*-- Bottom vertical bookend --*/
+        background: #8E1D23;
+        content: "";
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        top: inherit !important; /*--? Inherited from what? --*/
+        left: 21px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline { 
+        margin: 0 0 35px 0 !important;
+        border-left: 2px solid #8E1D23; /*-- This is the actual timeline line --*/
+        padding-left: 0 !important;
+        padding-top: 120px !important; /*-- This seems to create the spur between the top bookend and first marker.
+        Lost with it as there doesn't appear to be the same for the bottom --*/
+        border-top: 0 !important;
+        margin-left: 10px !important; /*--? When I put this in "margin" above, it doesn't work. Why? --*/
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li { /*-- This is each individual section of the timeline between the markers,
+    but not the top and bottom spurs.*/
+
+        height: 220px;
+        float: none !important;
+        width: inherit !important; /*--? Inherited from what? --*/
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li span { /*-- These are the markers along the timeline --*/
+        left: -9px !important;
+    }
+
+
+/*~~~~~~~ Images & Positioning ~~ Start --*/
+
+    .ticket_background_container {
+        height: 150px;
+        width: 150px;
+        padding: 6px;
+        margin-left: 125px;
+        margin-right: 0;        
+    }
+  
+    .ps-timeline-sec .container ol.ps-timeline li .img-handler-top { /* Removing this aligned all three top texts with the timeline
+    and moved them up */
+        position: absolute !important;
+        top: -80px !important;
+        width: 290px !important;
+        float: left !important;
+        margin-left: 15px !important;
+    }
+  
+    .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot { /* Removing this aligned all three top texts with the timeline
+    and moved the first two up. Maynooth just moved left */
+        position: absolute !important;
+        bottom: 0 !important;
+        width: 300px !important;
+        float: left !important;
+        margin-left: 15px !important; /*--? I'd have thought this should be as wide as the .img-handler-top, but it's not. Why? --*/
+        margin-bottom: 135px !important;
+    }
+
+  
+    .ps-timeline-sec .container ol.ps-timeline li p { /*-- Aligns text left to the timeline --*/
+        text-align: left !important;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li .timeline_text {
+        height: 2rem;
+        top: 0;
+        transform: rotate(-30deg);
+    }
+}
