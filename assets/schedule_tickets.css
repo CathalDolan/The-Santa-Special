@@ -97,6 +97,8 @@ main section a {
     height: 122px;
     width: 200px;
     margin: 0 auto;
+    position: relative;
+    text-align: left;
 }
 
 @media (min-width: 1160px) and (max-width: 1375px) { /* Allows images to shrink so that the timeline resizes properly on medium screens */
@@ -129,7 +131,18 @@ main section a {
     }
 }
 
+.ticket_background_overlay {
+    position: absolute;
+    width: 65%;
 
+    color: blue; /*--? This is in as a test. When I had a P in it wouldn't affect it, why? --*/
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.ticket_background_overlay h6 {
+    font-size: 13px;
+}
 
 
 /*~~~~~~~ Mobile Version */
