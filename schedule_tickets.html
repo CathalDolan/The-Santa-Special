@@ -91,7 +91,9 @@
                     <li>
                         <div class="img-handler-bot">
                             <div class="ticket_background_container">
-                                <div class="ticket_background_cover" id="first_sunday">
+                                <div class="ticket_background_overlay">
+                                    <h5>Sunday 6th December</h5>
+                                    <h6>10:45, 13:45</h6> 
                                 </div>
                             </div>
                         </div>
@@ -100,7 +102,9 @@
                     <li>
                         <div class="img-handler-top">
                             <div class="ticket_background_container">
-                                <div class="ticket_background_cover" id="second_saturday">
+                                <div class="ticket_background_overlay">
+                                    <h5>Saturday 12th December</h5>
+                                    <h6>11:05, 13:50 & 17:00*</h6> 
                                 </div>
                             </div>
                         </div>
@@ -109,7 +113,9 @@
                     <li>
                         <div class="img-handler-bot">
                             <div class="ticket_background_container">
-                                <div class="ticket_background_cover" id="second_sunday">
+                                <div class="ticket_background_overlay">
+                                    <h5>Sunday 13th December</h5>
+                                    <h6>10:45, 14:05 & 17:20*</h6> 
                                 </div>
                             </div>
                         </div>
@@ -118,7 +124,9 @@
                     <li>
                         <div class="img-handler-top">
                             <div class="ticket_background_container">
-                                <div class="ticket_background_cover" id="third_saturday">
+                                <div class="ticket_background_overlay">
+                                    <h5>Saturday 19th December</h5>
+                                    <h6>11:00, 13:45 & 17:10*</h6> <!--? When this was a P it separated itself from the div. Why? -->
                                 </div>
                             </div>
                         </div>
@@ -127,7 +135,9 @@
                     <li>
                         <div class="img-handler-bot">
                             <div class="ticket_background_container">
-                                <div class="ticket_background_cover" id="third_sunday">
+                                <div class="ticket_background_overlay">
+                                    <h5>Sunday 20th December</h5>
+                                    <h6>10:45, 13:55 & 17:00*</h6> 
                                 </div>
                             </div>
                         </div>
@@ -136,6 +146,9 @@
                 </ol>
             </div>
         </section>
+        <div id="diesel_locomotive_text">
+            <p>*Trains run at this time use a diesel locomotive to pull our vintage carriages</p>
+        </div>
     </main>
 
     <footer>
@@ -144,77 +157,48 @@
         <div class="container-fluid container_footer">
             <div class="row" id="footer_details">
                 <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
-                    <div class="row">
-                        <div class="col-12" id="logo_footer_div"> 
-                            <img src="https://i.imgur.com/WjTeKiF.png" alt="RPSI Logo" id="logo_footer">
-                        </div>
-                    </div>
+                    <img src="https://i.imgur.com/WjTeKiF.png" alt="RPSI Logo" id="logo_footer">
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
-                    <div class="row">
-                        <div class="col-12" id="tickets_footer_div"> 
-                            <h5><a href="#">Tickets</a></h5>
-                        </div>
-                    </div>
+                    <h5><a href="#">Tickets</a></h5>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
-                    <div class="row">
-                        <div class="col-12" id="contact_us_footer_div"> 
-                            <h5><a href="#">Contact Us</a></h5>
-                        </div>
-                    </div>
+                    <h5><a href="#">Contact Us</a></h5>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
-                    <div class="row">
-                        <div class="col-12" id="stay_informed_footer_div"> 
-                            <h5>Stay Informed?</h5>
-                            <form>
-                                <div class="form-group">
-                                    <input type="email" name="email" id="emailaddress" class="form-control input-sm" id="stay_informed_email_footer" placeholder="Email" required/>
-                                    <!-- ? Why is "input-sm" not having any effect? -->
-                                </div>
-                                <button type="submit" class="form_buttons" id="stay-informed_yes_button_footer">Yes!</button>
-                            </form>
-                        </div>
-                    </div>
+                    <h5>Stay Informed?</h5>
+                    <form class="form-group">
+                        <input type="email" name="email" id="emailaddress" class="form-control input-sm" id="stay_informed_email_footer" placeholder="Email" required/>
+                        <button type="submit" class="form_buttons" id="stay-informed_yes_button_footer">Yes!</button>
+                    </form>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
-                    <div class="row">
-                        <div class="col-12" id="social_footer"> 
-                            <h5>We're Social</h5>
-                            
-                            <ul class="list-inline social-links">
-                                <li class="list-inline-item">
-                                    <a href="https://www.facebook.com/steamtrainsireland/" target="_blank" class="icons_footer">
+                    <h5>We're Social</h5>
+                        <ul class="list-inline social-links">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/steamtrainsireland/" target="_blank" class="icons_footer">
                                     <i class="fab fa-facebook-square"></i>
                                     <span class="sr-only">Facebook</span>
-                                    </a>
-                                </li>
+                                </a>
+                            </li>
 
-                                <li class="list-inline-item">
-                                    <a href="https://twitter.com/rpsitrains" target="_blank" class="icons_footer">
-                                    <i class="fab fa-twitter-square"></i>
-                                    <span class="sr-only">Twitter</span>
-                                    </a>
-                                </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/rpsitrains" target="_blank" class="icons_footer">
+                                <i class="fab fa-twitter-square"></i>
+                                <span class="sr-only">Twitter</span>
+                                </a>
+                            </li>
 
-                                <li class="list-inline-item">
-                                    <a href="https://www.instagram.com/steamtrainsireland" target="_blank" class="icons_footer">
-                                    <i class="fab fa-instagram-square"></i>
-                                    <span class="sr-only">Instagram</span>
-                                    </a>
-                                </li> 
-
-                            </ul>
-                        </div>
-                    </div>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/steamtrainsireland" target="_blank" class="icons_footer">
+                                <i class="fab fa-instagram-square"></i>
+                                <span class="sr-only">Instagram</span>
+                                </a>
+                            </li> 
+                        </ul>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
-                    <div class="row">
-                        <div class="col-12" id="copyright_footer"> 
-                            <h5><a href="#">&copy 2020 Cathal Dolan</a></h5>
-                        </div>
-                    </div>
+                    <h5><a href="#">&copy 2020 Cathal Dolan</a></h5>
                 </div>
             </div>  
         </div>

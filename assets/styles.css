@@ -14,6 +14,7 @@
     padding: 0;
 }
 
+
 /*~~~~~~~~~~~~~~~~~~~~ Fonts & Text Start */
 
 h1, h2, h3, h4 {
@@ -94,10 +95,9 @@ a {
     background-color: #8E1D23 !important; /*-- !important added so that all future Bootstrap or other psuedo (is psuedo correct?) styles are over-ridden */
     color: #F8F8F8 !important;
     border: none !important;
-    height: 2em !important;
-    padding: 0 1em !important;
+    height: 30px !important;
+    padding: 0 15px !important;
     border-radius: 5px !important;
-    margin: 1em 0;
 }
 
 .form_buttons:hover {
@@ -215,12 +215,11 @@ Gallery pages. However, the sizes below do will apply to the Schedule & Tickets 
 
 #cover_text {
     background-color: #8E1D23aa;
-
-    width: 600px;
+    width: 500px;
     padding: 25px 0;
-    border-radius: 5%;
+    border-radius: 20px;
 
-    margin-left: -300px;
+    margin-left: -250px; /*-- Half the value of width to centre it, along with positions below --*/
 
     position: absolute;
     left: 50%;
@@ -338,8 +337,8 @@ main {
     background: url(https://i.imgur.com/Cm6UOZ8.png) no-repeat center center;
 }
 
-.column_main > .form_buttons {
-    margin: 1em 0 2em 0;
+.column_main .form_buttons {
+    margin: 15px;
 }
 
 @media (max-width: 1177px) { /*-- Hiding of "sit back" column in main section on tablets */
@@ -441,8 +440,8 @@ main {
     }
 }
 
-#stay-informed_yes_button_footer {
-    margin: 0;
+footer .form_buttons {
+    margin-top: 15px;
 }
 
 .social-links li a i {

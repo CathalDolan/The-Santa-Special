@@ -114,6 +114,14 @@ main section a {
     .ps-timeline-sec .container ol.ps-timeline {
         margin: 130px 0 150px 0; 
     }
+
+    .ticket_background_overlay h5 {
+        font-size: 16px;
+    }
+
+    .ticket_background_overlay h6 {
+        font-size: 11px !important;
+    }
 }
 
 @media (min-width: 750px) and (max-width: 1159px) { /* Allows the timeline to resize properly on medium screens */
@@ -128,6 +136,14 @@ main section a {
 
     .ps-timeline-sec .container ol.ps-timeline {
         margin: 95px 0 115px 0;
+    }
+
+    .ticket_background_overlay h5 {
+        font-size: 12px;
+    }
+
+    .ticket_background_overlay h6 {
+        font-size: 8px !important;
     }
 }
 

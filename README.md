@@ -636,3 +636,8 @@ Timeline info - "Nickoafan" https://codepen.io/nickoafan/pen/eJMaBx
 
 Navbar /*-- This code came from https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color 
 with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=youtu.be */
+
+Videos:
+- https://www.youtube.com/watch?v=YDULb2EsTY4&feature=youtu.be DJ Den Kot
+- https://www.youtube.com/watch?v=Tp_f26A1NDU&feature=youtu.be Me
+- https://www.youtube.com/watch?v=N5bZsdj5FDw&feature=youtu.be DJ Den Kot
