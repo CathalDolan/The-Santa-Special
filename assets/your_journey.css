@@ -192,11 +192,11 @@
     }
 
     .ps-timeline-sec .container ol.ps-timeline { 
-        margin: 0 0 35px 0 !important;
+        width: 340px !important; /*--? I added this and auto marginss below to try and center the timeline on mobile. Not working, why? --*/
+        margin: 0 auto 35px auto !important;
         border-left: 2px solid #8E1D23; /*-- This is the actual timeline line --*/
         padding-left: 0 !important;
-        padding-top: 120px !important; /*-- This seems to create the spur between the top bookend and first marker.
-        Lost with it as there doesn't appear to be the same for the bottom --*/
+        padding-top: 80px !important; /*-- Top spur, but can't find the same for the bottom --*/
         border-top: 0 !important;
         margin-left: 10px !important; /*--? When I put this in "margin" above, it doesn't work. Why? --*/
     }
@@ -208,6 +208,16 @@
         float: none !important;
         width: inherit !important; /*--? Inherited from what? --*/
     }
+
+    /* The two rules below were inserted to try and shorten the bottom spur. Didn't work independently or together.
+    
+    .ps-timeline-sec .container ol.ps-timeline .div_last {
+        margin-bottom: 0 !important;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline #li_last {
+        height: 220px;
+    } Trying to shorten the bottom spur */
 
     .ps-timeline-sec .container ol.ps-timeline li span { /*-- These are the markers along the timeline --*/
         left: -9px !important;

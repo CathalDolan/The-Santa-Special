@@ -70,6 +70,9 @@ to existing customers.
 The actual purpose of the site is to demonstrate my abilities as a developer. While
 aesthetics are important, the ultimate goal is to write high quality html and css 
 and demonstrate in such a way that shows my skill level as as a developer.
+- Full screen images
+- Different layouts on same devices depending on view 
+    - Gallery
 
 ## **1.3 Who Built the Site and Why?**
 The site was conceived, designed and built by Cathal Dolan as his first "User Centric 
@@ -636,6 +639,8 @@ Timeline info - "Nickoafan" https://codepen.io/nickoafan/pen/eJMaBx
 
 Navbar /*-- This code came from https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color 
 with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=youtu.be */
+
+scrollSpy NetNinja https://youtu.be/3t_4IJMcZKQ
 
 Videos:
 - https://www.youtube.com/watch?v=YDULb2EsTY4&feature=youtu.be DJ Den Kot

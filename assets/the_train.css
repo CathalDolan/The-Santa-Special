@@ -29,7 +29,7 @@
     background: url(https://i.imgur.com/bUa5q9f.png) no-repeat center center;
 }
 
-@media (min-width: 698px) and (max-width: 1177px) { /*-- Hiding of "Craven Carriages" column in main section on tablets */
+@media (max-width: 1177px) {
 #craven_carriages_container_div {
     display: none;
     }
