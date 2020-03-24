@@ -1,15 +1,12 @@
 <img src="https://i.imgur.com/ICXCZqT.png" style="margin: 15px;">
 
-`python3 -m http.server`
-
-
 # **Contents**
-**1 - Introduction**
+[**1 Introduction**](#1-introduction)
 - [1.1 What is the Site About?](#1.1-what-is-the-site-about)
 - [1.2 What is the Purpose of the Site?](#1.2-what-is-the-purpose-of-the-site)
 - [1.3 Who Built the Site and Why?](#1.3-who-built-the-site-and-why)
 
-**2 - Site Content & Structure**
+[**2 Site Content & Structure**](#2-site-content-and-structure)
 - [2.1 Pages Overview](#2.1-pages-overview)
 - [2.2 Global Elements](#2.2-global-elements)
     - [2.2.1 Page Responsiveness](#2.2.1-page-responsiveness)
@@ -29,7 +26,7 @@
     - [2.3.6 Gallery](#2.3.6-gallery)
     - [2.3.7 Contact Us](#2.3.7-contact-us)
 
-**3 - Technologies Used**
+[**3 Technologies Used**](#3-technologies-used)
 - [3.1 Bootstrap](#3.1-bootstrap)
 - [3.2 Imgur](#3.2-imgur)
 - [3.3 Font Awesome](#3.3-font-awesome)
@@ -37,7 +34,7 @@
 - [3.5 Gitpod](#3.5-gitpod)
 - [3.6 GitHub Repository](#3.6-github-repository)
 
-**4 - Testing**
+[**4 Testing**](#4-testing)
 - [4.1 Page Layouts](#4.1-page-layouts)
 - [4.2 Test: Header](#4.2-test-header)
     - [4.2.1 Site Logo](#4.2.1-site-logo)
@@ -76,11 +73,11 @@ children and give them a gift. The service also offers a limited range of snacks
 and a full bar. Tickets are available directly from the RPSI, its members, and online
 at [eventbrite](ghjk), a link to which is included on the "Schedule & Tickets" page.
 
-<img src="https://i.imgur.com/1lOIJKq.jpg" style="margin-left: 20%; margin-bottom: 25px; width: 400px;">
+<img src="https://i.imgur.com/BlIEgdm.jpg" style="margin-left: 20%; margin-bottom: 25px; width: 400px;">
 
 
 ## **1.2 What is the Purpose of the Site**
-The site has practical and theoretical purposes:
+The site has a practical and a theoretical purpose:
 
 ### **Practical**
 The principal purpose of the site is to demonstrate my abilities as a developer and put into 
@@ -119,7 +116,7 @@ on the train since 2014.
 
 [**Back to top of Introduction**](#introduction)
 
-[**Back to Contents Section**](#contents)
+[⬆ Back to Contents](#contents)
 
 ......................
 
@@ -161,8 +158,6 @@ For ease of understanding in this doc, the following apply:
 There are fours colours used throughout the site. Primary and second are employed to 
 reflect and maintain consistency with the RPSI crest colour scheme. The Font Primary colour
 is used to colour
-
-- 
 
 - **Primary Colour**: Burgundy: rgb(142, 29, 35), Hex #8E1D23 ![#8E1D23](https://placehold.it/15/8E1D23/000000?text=+)
     - Headings
@@ -534,7 +529,7 @@ sub-office in the Republic of Ireland.
 
 [**Back to top of this Section**](#2-site-content-and-structure)
 
-[**Back to Contents**](#contents)
+[⬆ Back to Contents](#contents)
 
 ......................
 
@@ -571,7 +566,7 @@ This website is hosted on [GitHub](https://github.io)
 
 [**Back to top of this Section**](#3-technologies-used)
 
-[⬆ back to Contents](#contents)
+[⬆ Back to Contents](#contents)
 
 ......................
 
@@ -731,7 +726,7 @@ Rendered pages should match test screen shots for each page and each device:
 
 [**Back to top of this Section**](#4-testing)
 
-[**Back to Contents**](#contents)
+[⬆ Back to Contents](#contents)
 
 ......................
 
@@ -754,7 +749,7 @@ included for each:
 
 [**Back to top of this Section**](#5-source-code-legend)
 
-[**Back to Contents**](#contents)
+[⬆ Back to Contents](#contents)
 
 ......................
 
@@ -776,9 +771,13 @@ publicly available front end on GitHub pages. It's done using the [git push] com
 
 All versions are held on the master branch.
 
+Prior to deployment, the site could be viewed in real time by adding the following
+command to the terminal window, and selecting "Open Browser" from the modal that
+displays: python3 -m http.server
+
 [**Back to top of this Section**](#6-deployment)
 
-[**Back to Contents**](#contents)
+[⬆ Back to Contents](#contents)
 
 ......................
 
@@ -806,8 +805,12 @@ Minor issues and solutions, such as centering elements came from a mix of source
 - https://stackoverflow.com/
 - https://www.w3schools.com/
 
+**IMPORTANT:** As this site was constructed as a project, and not meant for public consumption, 
+images and video are used without the copyright owners permission. Also, the information
+included in it is for the purposes of providing page content and may not be accurate or true.
+
 [**Back to top of this Section**](#7-credits-and-acknowledgements)
 
-[**Back to Contents**](#contents)
+[⬆ Back to Contents](#contents)
 
 ......................

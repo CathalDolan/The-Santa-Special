@@ -67,18 +67,19 @@
             to say hello? Please do drop us a line, we’d love to hear from you.</p>
         </section>
         <br/>
+        
     <!--~~~~~~~~~~~~~~~~~~~~ Contact Form - Start -->
         <div id="contact_us_form_container">
-            <form>
+            <form action="" method="post" enctype="text/plain"> <!-- As per the Footer form, submitted data is not sent anywhere. -->
                 <div class="form-group">
-                    <input type="text" class="form-control" id="full_name" aria-describedby="emailHelp" placeholder="Name">
+                    <input type="text" class="form-control" id="full_name" aria-describedby="emailHelp" placeholder="Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="email_address" aria-describedby="emailHelp" placeholder="Email">
+                    <input type="email" class="form-control" id="email_address" aria-describedby="emailHelp" placeholder="Email" required>
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
-                    <textarea rows="5" name="say_what_you_want" id="say_what_you_want" class="form-control" placeholder="Say what you want..." required></textarea>
+                    <textarea rows="5" name="say_what_you_want" id="say_what_you_want" class="form-control" placeholder="Say what you want..."></textarea>
                 </div>
                 <div class="form-check form-group">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
