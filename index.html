@@ -7,14 +7,17 @@
     <script src="https://kit.fontawesome.com/e4ebc8dc15.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles.css" type="text/css">
+    <link rel="stylesheet" href="assets/index.css" type="text/css">
     <title>Santa Special</title>
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
 </head>
 <body>
+
+<!--======================================== Header - Start -->
     <header>
         <section class="hero_outer">
             <div class="hero_image home"></div>
-            <a href="#home_introduction"><div id="cover_text">
+            <a href="#home_introduction"><div id="cover_text"> <!-- The anchor allows the cover text to be used as a hyper link to the introduction. -->
                 <h2>All Aboard</h2>
             </div></a>
         </section>
@@ -30,9 +33,6 @@
                 <ul class="navbar-nav ml-auto"> <!-- Objects should have defaulted to right anyway so unsure why "ml-auto" is needed -->
                     <li class="nav-item">
                         <a class="nav-link  active" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cards_test.html">Cards test</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="schedule_tickets.html">Schedule & Tickets</a>
@@ -56,6 +56,9 @@
             </div>
         </nav>
     </header>
+
+<!--======================================== Main Body - Start -->
+    <!--~~~~~~~~~~~~~~~~~~~~ Introduction - Start -->
     <main>
         <section id="home_introduction" class="page_introduction scrollspy">
             <h1>A Most Magical Journey</h1>
@@ -63,7 +66,7 @@
             of Christmas experiences. It’s time to board the Santa Special! Join Santa Claus, his 
             elves and a host of others as you and the kids steam your way into the festive season.</p>
         </section>
-
+    <!--~~~~~~~~~~~~~~~~~~~~ Info Cards - Start -->
         <section id="info_cards_home">
             <div class="container-fluid">
                 <div class="row">
@@ -121,6 +124,7 @@
             </div>
         </section>
 
+    <!--~~~~~~~~~~~~~~~~~~~~ Reviews "Tickets" - Start -->
         <section class="container-fluid" id="reviews_home">
                 <div class="row">
                     <div class="col-sm-12 col-lg-6 reviews_column" id="review_1">
@@ -144,6 +148,8 @@
                 </div>
         </section>
     </main>
+
+<!--======================================== Footer - Start -->
     <footer>
         <div id="footer_trim">
         </div>
@@ -199,12 +205,5 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-<script>
-    $(document).ready(function(){
-      $('.scrollspy').scrollSpy();
-    });
-  </script>
 </body>
 </html>

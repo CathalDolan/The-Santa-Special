@@ -1,9 +1,3 @@
-/*======================================== Section Start */
-/*~~~~~~~~~~~~~~~~~~~~ Sub-Section Start */
-/*========== Section End */
-/*--- Code Comment */
-/*?--- Code Query ?*/
-
 .hero_image.schedule_tickets {
     background-image: url(https://i.imgur.com/BlIEgdm.jpg);
 }
@@ -71,24 +65,6 @@ main section a {
     left: 50%;
 }
 
-.ps-timeline-sec .container ol.ps-timeline li .img-handler-top { /*-- Pushes top tickets up from below timeline --*/
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 55px;
-    width: 100%;
-}
-
-.ps-timeline-sec .container ol.ps-timeline li p {
-    text-align: center;
-    font-weight: bold;
-    color: #8E1D23;
-
-    position: absolute;
-    bottom: -55px;
-    width: 200px; /* Width needed to match .ticket_background_container as this element is positioned relative to it */
-}
-
-
 /*-- Start of images I think */
 
 .ticket_background_container {
@@ -98,7 +74,32 @@ main section a {
     width: 200px;
     margin: 0 auto;
     position: relative;
-    text-align: left;
+}
+
+.ticket_background_overlay {
+    width: 140px; /*-- 70% of the container width above */
+    position: absolute;
+    left: 50%;
+    margin-left: -65px; 
+    top: 50%;
+    margin-top: -40.5px;
+    z-index: 3;
+}
+
+.ticket_background_overlay h5 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+.ticket_background_overlay h6 {
+    font-size: 14px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top { /*-- Pushes top tickets up from below timeline --*/
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 55px;
+    width: 100%;
 }
 
 @media (min-width: 1160px) and (max-width: 1375px) { /* Allows images to shrink so that the timeline resizes properly on medium screens */
@@ -107,12 +108,11 @@ main section a {
         width: 175px;
     }
 
-    .ps-timeline-sec .container ol.ps-timeline li p {
-        width: 175px;
-    }
-
-    .ps-timeline-sec .container ol.ps-timeline {
-        margin: 130px 0 150px 0; 
+    .ticket_background_overlay {
+    width: 122.5px; /*-- 70% of the container width above */
+    position: absolute;
+    margin-left: -56px;
+    margin-top: -31px;
     }
 
     .ticket_background_overlay h5 {
@@ -120,7 +120,7 @@ main section a {
     }
 
     .ticket_background_overlay h6 {
-        font-size: 11px !important;
+        font-size: 12px;
     }
 }
 
@@ -130,12 +130,11 @@ main section a {
         width: 125px; 
     }
 
-    .ps-timeline-sec .container ol.ps-timeline li p {
-        width: 125px;
-    }
-
-    .ps-timeline-sec .container ol.ps-timeline {
-        margin: 95px 0 115px 0;
+    .ticket_background_overlay {
+    width: 87.5px; /*-- 70% of the container width above */
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -24px;
     }
 
     .ticket_background_overlay h5 {
@@ -143,21 +142,8 @@ main section a {
     }
 
     .ticket_background_overlay h6 {
-        font-size: 8px !important;
+        font-size: 9px;
     }
-}
-
-.ticket_background_overlay {
-    position: absolute;
-    width: 65%;
-
-    color: blue; /*--? This is in as a test. When I had a P in it wouldn't affect it, why? --*/
-    transform: translate(-50%, -50%);
-    z-index: 3;
-}
-
-.ticket_background_overlay h6 {
-    font-size: 13px;
 }
 
 
@@ -189,7 +175,7 @@ main section a {
         margin: 0 0 35px 0 !important;
         border-left: 2px solid #8E1D23; /*-- This is the actual timeline line --*/
         padding-left: 0 !important;
-        padding-top: 120px !important; /*-- This seems to create the spur between the top bookend and first marker.
+        padding-top: 76px !important; /*-- This seems to create the spur between the top bookend and first marker.
         Lost with it as there doesn't appear to be the same for the bottom --*/
         border-top: 0 !important;
         margin-left: 10px !important; /*--? When I put this in "margin" above, it doesn't work. Why? --*/
@@ -208,20 +194,20 @@ main section a {
     }
 
 
-/*~~~~~~~ Images & Positioning ~~ Start --*/
+/*~~~~~~~ Images & Positioning Mobile ~~ Start --*/
 
     .ticket_background_container {
-        height: 150px;
-        width: 150px;
+        height: 122px;
+        width: 200px;
         padding: 6px;
-        margin-left: 125px;
+        margin-left: 40px;
         margin-right: 0;        
     }
   
     .ps-timeline-sec .container ol.ps-timeline li .img-handler-top { /* Removing this aligned all three top texts with the timeline
     and moved them up */
         position: absolute !important;
-        top: -80px !important;
+        top: -70px !important;
         width: 290px !important;
         float: left !important;
         margin-left: 15px !important;
@@ -234,17 +220,14 @@ main section a {
         width: 300px !important;
         float: left !important;
         margin-left: 15px !important; /*--? I'd have thought this should be as wide as the .img-handler-top, but it's not. Why? --*/
-        margin-bottom: 135px !important;
+        margin-bottom: 160px !important;
     }
 
-  
-    .ps-timeline-sec .container ol.ps-timeline li p { /*-- Aligns text left to the timeline --*/
-        text-align: left !important;
+    #bottom_li {
+        height: 50px;
     }
 
-    .ps-timeline-sec .container ol.ps-timeline li .timeline_text {
-        height: 2rem;
-        top: 0;
-        transform: rotate(-30deg);
+    #bottom_div {
+        top: 168px;
     }
 }

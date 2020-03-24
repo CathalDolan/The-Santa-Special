@@ -71,6 +71,8 @@
     bottom: 0;
     margin-bottom: 100px;
     width: 100%;
+    text-align: center;
+    
 }
 
 .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot { /*-- Pushes bottom text down from above the timeline --*/
@@ -209,22 +211,20 @@
         width: inherit !important; /*--? Inherited from what? --*/
     }
 
-    /* The two rules below were inserted to try and shorten the bottom spur. Didn't work independently or together.
-    
-    .ps-timeline-sec .container ol.ps-timeline .div_last {
-        margin-bottom: 0 !important;
+    #bottom_li {
+        height: 80px;
     }
 
-    .ps-timeline-sec .container ol.ps-timeline #li_last {
-        height: 220px;
-    } Trying to shorten the bottom spur */
+    #bottom_div {
+        top: -112px;
+    }
 
     .ps-timeline-sec .container ol.ps-timeline li span { /*-- These are the markers along the timeline --*/
         left: -9px !important;
     }
 
 
-/*~~~~~~~ Images & Positioning ~~ Start --*/
+/*~~~~~~~ Images & Positioning Mobile ~~ Start --*/
 
     .circle_container {
         height: 150px;

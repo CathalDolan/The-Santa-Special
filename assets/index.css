@@ -1,0 +1,59 @@
+
+
+
+.circle_bg_cover, #meet_santa_image_home {
+    background: url(https://i.imgur.com/6pZTdq1.png) no-repeat center center;
+}
+
+.circle_bg_cover, #trip_back_image_home {
+    background: url(https://i.imgur.com/vqC4Ppf.png) no-repeat center center;
+}
+
+.circle_bg_cover, #sit_back_image_home {
+    background: url(https://i.imgur.com/Cm6UOZ8.png) no-repeat center center;
+}
+
+.column_main .form_buttons {
+    margin: 15px;
+}
+
+@media (max-width: 1177px) { /*-- Hiding of "sit back" column in main section on tablets */
+#sit_back_container_div {
+    display: none;
+    }
+}
+
+#reviews_home {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.reviews_column {
+    text-align: center;
+}
+
+.ticket_background_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+@media (max-width: 812px) {
+#review_2 {
+    display: none;
+    }
+
+#review_1 { /*--? This, in combinbation with the two that follow, isn't changing the order. What am I doing wrong> */
+    order: 1;
+}
+
+#meet_santa_container_div {
+    order: 2;
+  }
+  
+#trip_back_container_div {
+    order: 3;
+  }
+}
