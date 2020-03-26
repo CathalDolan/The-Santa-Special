@@ -71,7 +71,7 @@ main section a {
 
 #contact_us_form_container .form-check-input {
     height: 20px;
-    width: 20px;
+    width: 20px; 
 }
 
 div.form-check, .form-text.text-muted, #contact_us_form_container .form-check-label {
@@ -79,13 +79,23 @@ div.form-check, .form-text.text-muted, #contact_us_form_container .form-check-la
     color: #f8f8f8 !important; /*-- Required to make the muted text change */
 }
 
-/* #contact_us_form_container .form_buttons {
-    margin-left: 45%;
-} */
-
-#contact_us_form_container .submit_button_div {
+button {
+    background-color: #8E1D23 !important;
+    color: #F8F8F8 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    min-width: 45px;
+    max-width: 75px !important;
+    height: 30px;
+    margin: 0 auto 0 auto;
     text-align: center;
+    line-height: 30px;
 }
+
+.form_buttons {
+    margin-bottom: 15px;
+} 
+
 
 /*======================================== Contact Details Start */
 

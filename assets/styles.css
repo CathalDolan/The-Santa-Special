@@ -105,15 +105,20 @@ a {
     background-color: #8E1D23 !important; /*-- !important added so that all future Bootstrap or other psuedo (is psuedo correct?) styles are over-ridden */
     color: #F8F8F8 !important;
     border: none !important;
-    height: 30px !important;
-    padding: 0 15px !important;
     border-radius: 5px !important;
+    min-width: 45px;
+    max-width: 75px !important;
+    height: 30px;
+    margin: 15px auto 0 auto;
+    text-align: center;
+    line-height: 30px;
 }
 
 .form_buttons:hover {
     background-color: #8E1D23aa !important;
-    height: 2.25em !important;
-    padding: 0 1.25em !important;
+    height: 32px !important;
+    text-align: center;
+    line-height: 32px;
 }
 
 .circle_container { /* This is employed on the Home, The Train, and The Crew pages */

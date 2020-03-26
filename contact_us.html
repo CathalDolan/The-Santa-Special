@@ -62,7 +62,7 @@
         <section id="contact_us_introduction" class="page_introduction">
             <h1>Say Hello</h1>
             <p>Do you have a question, a comment, a complaint, a suggestion, wondering about tickets (did you check out the 
-            <span><a href="/schedule_tickets.html" target="_blank">Schedule & Tickets</a></span> 
+            <span><a href="schedule_tickets.html" target="_blank">Schedule & Tickets</a></span> 
             page?), maybe you mislaid something on the train, maybe you mislaid somebody on the train, or do you just want 
             to say hello? Please do drop us a line, we’d love to hear from you.</p>
         </section>
@@ -70,7 +70,7 @@
         
     <!--~~~~~~~~~~~~~~~~~~~~ Contact Form - Start -->
         <div id="contact_us_form_container">
-            <form action="" method="post" enctype="text/plain"> <!-- As per the Footer form, submitted data is not sent anywhere. -->
+            <form action="mailto:cathal@gizagig.com" method="post" enctype="text/plain"> <!-- As per the Footer form, submitted data is not sent anywhere. -->
                 <div class="form-group">
                     <input type="text" class="form-control" id="full_name" aria-describedby="emailHelp" placeholder="Name" required>
                 </div>
@@ -85,8 +85,8 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Stay informed?</label>
                 </div>
-                <div class="form-group submit_button_div">
-                    <button type="submit" id="contact_us_form_button" class="form_buttons">Submit</button>
+                <div class="form-group submit_button_div form_buttons">
+                    <button type="submit" id="">Submit</button>
                 </div>
             </form>
         </div>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-2 my-auto">
                     <h5>Stay Informed?</h5>
-                    <form class="form-group">
+                    <form class="form-group" action="mailto:cathal@gizagig.com" method="post" enctype="text/plain">
                         <input type="email" name="email" id="emailaddress" class="form-control input-sm" placeholder="Email" required/>
                         <button type="submit" class="form_buttons" id="stay-informed_yes_button_footer">Yes!</button>
                     </form>

@@ -13,9 +13,9 @@
     background: url(https://i.imgur.com/Cm6UOZ8.png) no-repeat center center;
 }
 
-.column_main .form_buttons {
+/* .column_main .form_buttons {
     margin: 15px;
-}
+} */
 
 @media (max-width: 1177px) { /*-- Hiding of "sit back" column in main section on tablets */
 #sit_back_container_div {

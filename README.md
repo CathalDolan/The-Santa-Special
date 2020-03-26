@@ -82,7 +82,7 @@ The site has a practical and a theoretical purpose:
 ### **Practical**
 The principal purpose of the site is to demonstrate my abilities as a developer and put into 
 place what I have learned so far, particularly recreating what I learned in previous
-modules and projects. While aesthetics and US are important, the prupose of taking this course
+modules and projects. While aesthetics and UX are important, the prupose of taking this course
 is to learn how to write and implement high quality code, with this project focusing onhtml and
 css. With this in mind, several elements of the site have been built with coding rather than
 design in mind. Examples of this are:
