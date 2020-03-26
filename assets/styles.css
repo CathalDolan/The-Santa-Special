@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700&display=swap');
 
-
 /*~~~~~~~~~~~~~~~~~~~~ Pages Set-up - Start */
 * {
     margin: 0;
@@ -137,7 +136,6 @@ a {
     max-height: 1000px;
 }
 
-
 /*~~~~~~~~~~~~~~~~~~~~ "Ticket" Background Start */
 
 /*-- The vintage style ticket background is found on the Home, Schedule & Tickets and 
@@ -243,6 +241,10 @@ Gallery pages. However, the sizes below do will apply to the Schedule & Tickets 
     position: absolute;
     left: 50%;
     bottom: 30%;
+}
+
+#cover_text:hover {
+    background-color: #8E1D23;
 }
 
 

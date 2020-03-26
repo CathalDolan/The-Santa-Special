@@ -80,7 +80,7 @@ div.form-check, .form-text.text-muted, #contact_us_form_container .form-check-la
 }
 
 button {
-    background-color: #8E1D23 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
     color: #F8F8F8 !important;
     border: none !important;
     border-radius: 5px !important;
