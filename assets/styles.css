@@ -317,10 +317,6 @@ with an explanation from https://www.youtube.com/watch?v=U7mjfv9gATs&feature=you
         right: 1em;
     }
 
-    nav.nav-bg-colour { /*-- ? This is here because I wanted to make the background transparent so that it's not visible, but it's making the icon transparent too. Why? --*/
-        opacity:#8E1D23aa;
-    }
-
     .navbar-toggler:focus, .navbar-toggler:active { /*-- Removes the coloured outline on teh Hamburger menu when clicked. --*/
     outline: none;
     box-shadow: none;
